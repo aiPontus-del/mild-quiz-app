@@ -20,6 +20,8 @@ export default function HostPage() {
   const [podium, setPodium] = useState([]);
   const [joinUrl, setJoinUrl] = useState('…');
   const [muted, setMuted] = useState(false);
+  const [paused, setPaused] = useState(false);
+  const [isFs, setIsFs] = useState(false);
   const tick = useRef(null);
   const pinRef = useRef(null);
   const mutedRef = useRef(false);
@@ -40,9 +42,10 @@ export default function HostPage() {
       setJoinUrl(window.location.host);
       try { pinRef.current = localStorage.getItem('mq_host'); } catch (e) {}
     }
-    // start background music on first interaction (browsers block autoplay)
     const startOnce = () => { if (!mutedRef.current) Sound.startMusic(); window.removeEventListener('pointerdown', startOnce); };
     window.addEventListener('pointerdown', startOnce);
+    const onFs = () => setIsFs(!!document.fullscreenElement);
+    document.addEventListener('fullscreenchange', onFs);
 
     const s = getSocket();
     const onConnect = () => {
@@ -59,24 +62,26 @@ export default function HostPage() {
 
     s.on('room:players', (d) => setPlayers(d.players));
     s.on('room:quiz', (qz) => setQuiz(qz));
-    s.on('room:reset', () => setPhase('lobby'));
-    s.on('game:countdown', (d) => { setCount(d.n); setPhase('countdown'); Sound.tick(); });
-    s.on('game:preview', (data) => { setQ(data); setPhase('preview'); Sound.go(); });
-    s.on('game:question', (data) => { setQ(data); setAnswered({ count: 0, total: pc.current }); setPhase('question'); });
+    s.on('room:reset', () => { setPaused(false); setPhase('lobby'); });
+    s.on('game:countdown', (d) => { setCount(d.n); setPaused(false); setPhase('countdown'); Sound.tick(); });
+    s.on('game:preview', (data) => { setQ(data); setPaused(false); setPhase('preview'); Sound.go(); });
+    s.on('game:question', (data) => { setQ(data); setPaused(false); setAnswered({ count: 0, total: pc.current }); setPhase('question'); });
     s.on('game:answered', (a) => setAnswered(a));
-    s.on('game:results', (r) => { setResults(r); setPhase('results'); });
-    s.on('game:over', (d) => { setPodium(d.podium); setPhase('winner'); Sound.win(); });
+    s.on('game:paused', () => setPaused(true));
+    s.on('game:resumed', (d) => { setQ((prev) => ({ ...prev, endsAt: d.endsAt })); setPaused(false); });
+    s.on('game:results', (r) => { setResults(r); setPaused(false); setPhase('results'); });
+    s.on('game:over', (d) => { setPodium(d.podium); setPaused(false); setPhase('winner'); Sound.win(); });
 
-    return () => { window.removeEventListener('pointerdown', startOnce); s.off('connect', onConnect); ['room:players', 'room:quiz', 'room:reset', 'game:countdown', 'game:preview', 'game:question', 'game:answered', 'game:results', 'game:over'].forEach((e) => s.off(e)); };
+    return () => { window.removeEventListener('pointerdown', startOnce); document.removeEventListener('fullscreenchange', onFs); s.off('connect', onConnect); ['room:players', 'room:quiz', 'room:reset', 'game:countdown', 'game:preview', 'game:question', 'game:answered', 'game:paused', 'game:resumed', 'game:results', 'game:over'].forEach((e) => s.off(e)); };
   }, []);
 
   useEffect(() => {
-    if (phase !== 'question') { clearInterval(tick.current); return; }
+    if (phase !== 'question' || paused) { clearInterval(tick.current); return; }
     const update = () => setTimeLeft(Math.max(0, Math.ceil((q.endsAt - Date.now()) / 1000)));
     update();
     tick.current = setInterval(update, 250);
     return () => clearInterval(tick.current);
-  }, [phase, q.endsAt]);
+  }, [phase, q.endsAt, paused]);
 
   const s = () => getSocket();
   const pickQuiz = (id) => s().emit('host:setQuiz', { quizId: id });
@@ -84,25 +89,27 @@ export default function HostPage() {
   const reveal = () => s().emit('host:reveal');
   const next = () => s().emit('host:next');
   const restart = () => s().emit('host:restart');
-  const toggleMute = () => {
-    const m = !muted; setMuted(m); mutedRef.current = m; Sound.setMuted(m);
-    if (!m) Sound.startMusic();
-  };
+  const pause = () => s().emit('host:pause');
+  const unpause = () => s().emit('host:unpause');
+  const skip = () => s().emit('host:skip');
+  const endGame = () => { if (confirm('Avsluta spelet och visa vinnaren nu?')) s().emit('host:end'); };
+  const resetGame = () => { if (confirm('Nollställa? Alla spelare måste gå med på nytt.')) s().emit('host:reset'); };
+  const toggleMute = () => { const m = !muted; setMuted(m); mutedRef.current = m; Sound.setMuted(m); if (!m) Sound.startMusic(); };
+  const toggleFs = () => { if (typeof document === 'undefined') return; if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen().catch(() => {}); };
 
   const resultsQuestion = { text: q.text, type: results.type, choices: results.choices.length ? results.choices : q.choices, correct: results.correct, double: results.double };
+  const cornerBtn = { position: 'fixed', top: 16, zIndex: 20, border: '1px solid rgba(0,0,0,.12)', background: '#fff', borderRadius: 999, width: 42, height: 42, fontSize: 18, cursor: 'pointer' };
 
   return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 36, position: 'relative' }}>
-      <button onClick={toggleMute} aria-label="Ljud på/av"
-        style={{ position: 'fixed', top: 16, right: 16, zIndex: 20, border: '1px solid rgba(0,0,0,.12)', background: '#fff', borderRadius: 999, width: 42, height: 42, fontSize: 18, cursor: 'pointer' }}>
-        {muted ? '🔇' : '🔊'}
-      </button>
+      <button onClick={toggleFs} aria-label="Helskärm" style={{ ...cornerBtn, right: 66 }}>{isFs ? '🡼' : '⛶'}</button>
+      <button onClick={toggleMute} aria-label="Ljud på/av" style={{ ...cornerBtn, right: 16 }}>{muted ? '🔇' : '🔊'}</button>
       {phase === 'lobby' && <HostLobby pin={pin} joinUrl={joinUrl} qr={qr} players={players} quiz={quiz} quizzes={quizzes} onPickQuiz={pickQuiz} onStart={start} />}
       {phase === 'countdown' && <HostCountdown n={count} />}
       {phase === 'preview' && <HostPreview question={q} qIndex={q.qIndex} total={q.total} />}
-      {phase === 'question' && <HostQuestion qIndex={q.qIndex} total={q.total} question={q} timeLeft={timeLeft} timeLimit={q.timeLimit} answeredCount={answered.count} playerCount={players.length} onReveal={reveal} />}
+      {phase === 'question' && <HostQuestion qIndex={q.qIndex} total={q.total} question={q} timeLeft={timeLeft} timeLimit={q.timeLimit} answeredCount={answered.count} playerCount={players.length} onReveal={reveal} onPause={pause} onUnpause={unpause} onSkip={skip} onEnd={endGame} paused={paused} />}
       {phase === 'results' && <HostResults question={resultsQuestion} distribution={results.distribution} leaderboard={results.leaderboard.slice(0, 5)} onNext={next} isLast={results.isLast} />}
-      {phase === 'winner' && <HostWinner podium={podium} onRestart={restart} />}
+      {phase === 'winner' && <HostWinner podium={podium} onRestart={restart} onNewGame={resetGame} />}
     </main>
   );
 }

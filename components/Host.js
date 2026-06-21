@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import { Card, Shape, Tag, Media, DoubleBadge } from './ui';
 import { SHAPES } from '@/lib/game';
 
@@ -7,6 +8,21 @@ const accentBtn = {
   background: 'linear-gradient(180deg,#00C9AC,#00A58F)', borderRadius: 20, padding: 22,
   fontSize: 21, fontWeight: 800, letterSpacing: '-.01em', boxShadow: '0 16px 32px -14px rgba(0,165,143,.8)',
 };
+const ctrlBtn = { border: '1px solid rgba(0,0,0,.14)', background: '#fff', color: '#161616', borderRadius: 999, padding: '11px 18px', fontSize: 14, fontWeight: 700, cursor: 'pointer', fontFamily: 'inherit' };
+
+function CopyLinkButton({ pin }) {
+  const [copied, setCopied] = useState(false);
+  const copy = () => {
+    if (typeof window === 'undefined') return;
+    const link = `${window.location.origin}/?pin=${pin}`;
+    if (navigator.clipboard) navigator.clipboard.writeText(link).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1500); }).catch(() => {});
+  };
+  return (
+    <button onClick={copy} className="mono" style={{ alignSelf: 'flex-start', border: '1px solid rgba(255,255,255,.4)', background: 'rgba(255,255,255,.14)', color: '#fff', borderRadius: 999, padding: '8px 14px', fontSize: 11, letterSpacing: '.08em', textTransform: 'uppercase', cursor: 'pointer' }}>
+      {copied ? '✓ Kopierad' : 'Kopiera join-länk'}
+    </button>
+  );
+}
 
 function OptionTile({ i, text, type, big }) {
   if (type === 'truefalse') {
@@ -59,6 +75,7 @@ export function HostLobby({ pin, joinUrl, players, quiz, quizzes, onPickQuiz, on
               </div>
               <div className="mono" style={{ fontSize: 12, lineHeight: 1.5, opacity: .95 }}>Skanna för att<br />gå med direkt<br /><span style={{ opacity: .8 }}>{joinUrl}</span></div>
             </div>
+            <CopyLinkButton pin={pin} />
           </div>
 
           <div style={{ background: '#F4F3EF', borderRadius: 24, padding: 24, display: 'flex', flexDirection: 'column', minHeight: 360 }}>
@@ -111,7 +128,7 @@ export function HostPreview({ question, qIndex, total }) {
   );
 }
 
-export function HostQuestion({ qIndex, total, question, timeLeft, timeLimit, answeredCount, playerCount, onReveal }) {
+export function HostQuestion({ qIndex, total, question, timeLeft, timeLimit, answeredCount, playerCount, onReveal, onPause, onUnpause, onSkip, onEnd, paused }) {
   const circ = 2 * Math.PI * 51;
   const offset = circ * (1 - timeLeft / timeLimit);
   const isTF = question.type === 'truefalse';
@@ -125,6 +142,7 @@ export function HostQuestion({ qIndex, total, question, timeLeft, timeLimit, ans
               Fråga {String(qIndex + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
             </span>
             {question.double && <DoubleBadge />}
+            {paused && <Tag color="#C62828">Pausad</Tag>}
           </div>
           <span className="mono" style={{ fontSize: 13, color: '#6E6C63' }}>
             <strong style={{ color: '#161616', fontSize: 16 }}>{answeredCount}</strong> / {playerCount} har svarat
@@ -207,7 +225,7 @@ export function HostResults({ question, distribution, leaderboard, onNext, isLas
   );
 }
 
-export function HostWinner({ podium, onRestart }) {
+export function HostWinner({ podium, onRestart, onNewGame }) {
   const order = [1, 0, 2];
   const heights = { 0: 150, 1: 110, 2: 86 };
   return (
@@ -232,7 +250,10 @@ export function HostWinner({ podium, onRestart }) {
             );
           })}
         </div>
-        <button onClick={onRestart} style={{ ...accentBtn, marginTop: 30, width: 'auto', padding: '16px 30px' }}>Spela igen ↺</button>
+        <div style={{ display: 'flex', gap: 12, justifyContent: 'center', marginTop: 30, flexWrap: 'wrap' }}>
+          <button onClick={onRestart} style={{ ...accentBtn, width: 'auto', padding: '16px 26px' }}>Spela igen ↺</button>
+          <button onClick={onNewGame} style={{ ...accentBtn, width: 'auto', padding: '16px 26px', background: '#fff', color: '#161616', border: '1px solid rgba(0,0,0,.14)', boxShadow: 'none' }}>Nytt spel (rensa spelare)</button>
+        </div>
       </div>
     </Card>
   );

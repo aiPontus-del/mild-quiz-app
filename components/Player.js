@@ -67,6 +67,15 @@ function Header({ qLabel, timeLeft, double }) {
   );
 }
 
+function Paused() {
+  return (
+    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#fff', textAlign: 'center', gap: 14 }}>
+      <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'rgba(255,255,255,.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 36 }}>⏸</div>
+      <h2 style={{ margin: 0, fontSize: 22, fontWeight: 800 }}>Pausad</h2>
+      <p className="mono" style={{ color: '#7C7C7C', fontSize: 12 }}>Värden har pausat spelet…</p>
+    </div>
+  );
+}
 function Locked() {
   return (
     <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#fff', textAlign: 'center', gap: 14 }}>
@@ -77,7 +86,7 @@ function Locked() {
   );
 }
 
-export function PlayerAnswer({ qLabel, timeLeft, locked, type, choiceCount, choices, double, onSubmit }) {
+export function PlayerAnswer({ qLabel, timeLeft, locked, paused, type, choiceCount, choices, double, onSubmit }) {
   const [sel, setSel] = useState([]);
   useEffect(() => { setSel([]); }, [qLabel]);
 
@@ -86,7 +95,7 @@ export function PlayerAnswer({ qLabel, timeLeft, locked, type, choiceCount, choi
       <Phone>
         <div style={{ padding: '40px 16px 16px', display: 'flex', flexDirection: 'column', height: '100%' }}>
           <Header qLabel={qLabel} timeLeft={timeLeft} double={double} />
-          {locked ? <Locked /> : (
+          {paused ? <Paused /> : locked ? <Locked /> : (
             <div style={{ flex: 1, display: 'grid', gridTemplateRows: '1fr 1fr', gap: 12 }}>
               {[0, 1].map((i) => (
                 <button key={i} onClick={() => onSubmit(i)}
@@ -108,7 +117,7 @@ export function PlayerAnswer({ qLabel, timeLeft, locked, type, choiceCount, choi
     <Phone>
       <div style={{ padding: '40px 16px 16px', display: 'flex', flexDirection: 'column', height: '100%' }}>
         <Header qLabel={qLabel} timeLeft={timeLeft} double={double} />
-        {locked ? <Locked /> : (
+        {paused ? <Paused /> : locked ? <Locked /> : (
           <>
             <div style={{ flex: 1, display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: 12 }}>
               {Array.from({ length: n }).map((_, i) => {

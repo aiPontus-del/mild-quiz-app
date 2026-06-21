@@ -101,7 +101,7 @@ app.prepare().then(async () => {
   function startQuestion(room) {
     clearRoomTimer(room);
     const q = currentQ(room);
-    room.phase = 'question'; room.answers = new Map(); room.startedAt = Date.now();
+    room.phase = 'question'; room.answers = new Map(); room.startedAt = Date.now(); room.paused = false;
     room.endsAt = room.startedAt + q.timeLimit * 1000;
     io.to(room.pin).emit('game:question', questionPublic(q, room.qIndex, room.quiz.questions.length, { endsAt: room.endsAt }));
     persist(room);
@@ -224,6 +224,48 @@ app.prepare().then(async () => {
       startCountdown(room, 0);
     });
     socket.on('host:reveal', () => { const room = rooms.get(socket.data.pin); if (room && room.phase === 'question') endQuestion(room); });
+    socket.on('host:pause', () => {
+      const room = rooms.get(socket.data.pin);
+      if (!room || room.phase !== 'question' || room.paused) return;
+      room.paused = true;
+      room.pausedRemaining = Math.max(0, room.endsAt - Date.now());
+      room.pausedElapsed = Math.max(0, Date.now() - room.startedAt);
+      if (room.timer) { clearTimeout(room.timer); room.timer = null; }
+      io.to(room.pin).emit('game:paused');
+      persist(room);
+    });
+    socket.on('host:unpause', () => {
+      const room = rooms.get(socket.data.pin);
+      if (!room || room.phase !== 'question' || !room.paused) return;
+      room.paused = false;
+      room.startedAt = Date.now() - (room.pausedElapsed || 0);
+      room.endsAt = Date.now() + (room.pausedRemaining || 0);
+      room.timer = setTimeout(() => endQuestion(room), room.pausedRemaining || 0);
+      io.to(room.pin).emit('game:resumed', { endsAt: room.endsAt });
+      persist(room);
+    });
+    socket.on('host:skip', () => {
+      const room = rooms.get(socket.data.pin);
+      if (!room || (room.phase !== 'question' && room.phase !== 'preview' && room.phase !== 'countdown')) return;
+      clearRoomTimer(room); room.paused = false;
+      if (room.qIndex + 1 >= room.quiz.questions.length) endGame(room);
+      else startCountdown(room, room.qIndex + 1);
+    });
+    socket.on('host:end', () => {
+      const room = rooms.get(socket.data.pin);
+      if (!room || room.phase === 'lobby' || room.phase === 'winner') return;
+      endGame(room);
+    });
+    socket.on('host:reset', () => {
+      const room = rooms.get(socket.data.pin);
+      if (!room) return;
+      clearRoomTimer(room); room.paused = false;
+      room.players = new Map(); room.answers = new Map(); room.qIndex = 0; room.phase = 'lobby';
+      io.to(room.pin).emit('room:cleared');
+      io.to(room.pin).emit('room:players', { players: [] });
+      if (room.hostSocketId) io.to(room.hostSocketId).emit('room:reset');
+      persist(room);
+    });
     socket.on('host:next', () => {
       const room = rooms.get(socket.data.pin);
       if (!room || room.phase !== 'results') return;
@@ -271,7 +313,7 @@ app.prepare().then(async () => {
     socket.on('player:answer', ({ answer }) => {
       const room = rooms.get(socket.data.pin);
       const id = socket.data.playerId;
-      if (!room || room.phase !== 'question' || !id) return;
+      if (!room || room.phase !== 'question' || room.paused || !id) return;
       if (room.answers.has(id)) return;
       room.answers.set(id, { answer, timeMs: Date.now() - room.startedAt });
       socket.emit('you:locked');
