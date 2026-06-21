@@ -24,11 +24,11 @@ function CopyLinkButton({ pin }) {
   );
 }
 
-function OptionTile({ i, text, type, big }) {
+function OptionTile({ i, text, type }) {
   if (type === 'truefalse') {
     const yes = i === 0;
     return (
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, padding: big ? '30px 24px' : '22px 24px', borderRadius: 20, background: yes ? '#00BFA5' : '#EF5350', color: '#fff', fontSize: 26, fontWeight: 800 }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, padding: '22px 24px', borderRadius: 20, background: yes ? '#00BFA5' : '#EF5350', color: '#fff', fontSize: 26, fontWeight: 800 }}>
         <span style={{ fontSize: 30 }}>{yes ? '✓' : '✕'}</span>{text}
       </div>
     );
@@ -131,8 +131,6 @@ export function HostPreview({ question, qIndex, total }) {
 export function HostQuestion({ qIndex, total, question, timeLeft, timeLimit, answeredCount, playerCount, onReveal, onPause, onUnpause, onSkip, onEnd, paused }) {
   const circ = 2 * Math.PI * 51;
   const offset = circ * (1 - timeLeft / timeLimit);
-  const isTF = question.type === 'truefalse';
-  const cols = isTF ? '1fr 1fr' : '1fr 1fr';
   return (
     <Card>
       <div style={{ padding: '26px 38px 34px' }}>
@@ -160,12 +158,15 @@ export function HostQuestion({ qIndex, total, question, timeLeft, timeLimit, ans
         <h1 style={{ fontSize: 'clamp(22px,2.8vw,38px)', fontWeight: 800, letterSpacing: '-.025em', lineHeight: 1.1, textAlign: 'center', margin: '4px auto 14px', maxWidth: '22ch' }}>{question.text}</h1>
         {question.type === 'multi' && <p className="mono" style={{ textAlign: 'center', color: '#9A988E', fontSize: 12, marginBottom: 14, textTransform: 'uppercase', letterSpacing: '.1em' }}>Välj alla rätta svar</p>}
 
-        <div style={{ display: 'grid', gridTemplateColumns: cols, gap: 14 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
           {question.choices.map((c, i) => <OptionTile key={i} i={i} text={c} type={question.type} />)}
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 18 }}>
-          <button onClick={onReveal} style={{ border: '1px solid rgba(0,0,0,.14)', background: '#fff', borderRadius: 999, padding: '12px 22px', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}>Visa svar →</button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 18, flexWrap: 'wrap' }}>
+          <button onClick={paused ? onUnpause : onPause} style={ctrlBtn}>{paused ? '▶ Återuppta' : '⏸ Pausa'}</button>
+          <button onClick={onSkip} style={ctrlBtn}>⏭ Hoppa över</button>
+          <button onClick={onEnd} style={{ ...ctrlBtn, color: '#C62828', borderColor: 'rgba(198,40,40,.3)' }}>⏹ Avsluta spelet</button>
+          <button onClick={onReveal} style={{ ...ctrlBtn, marginLeft: 'auto', background: '#161616', color: '#fff', border: 'none' }}>Visa svar →</button>
         </div>
       </div>
     </Card>
