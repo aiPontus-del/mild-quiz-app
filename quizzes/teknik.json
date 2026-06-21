@@ -1,0 +1,147 @@
+{
+  "id": "teknik",
+  "title": "Teknik & uppfinningar",
+  "description": "Vem, vad och när.",
+  "questions": [
+    {
+      "text": "Vem anses ha uppfunnit telefonen (första patentet)?",
+      "choices": [
+        "Edison",
+        "Bell",
+        "Marconi",
+        "Tesla"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket företag lanserade den första iPhone (2007)?",
+      "choices": [
+        "Nokia",
+        "Apple",
+        "Samsung",
+        "Blackberry"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad står förkortningen 'HTTP' för?",
+      "choices": [
+        "HyperText Transfer Protocol",
+        "High Tech Transfer Process",
+        "Hyperlink Text Transmission Path",
+        "Home Terminal Transfer Protocol"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vem konstruerade den första praktiska glödlampan i stor skala?",
+      "choices": [
+        "Tesla",
+        "Edison",
+        "Faraday",
+        "Volta"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land uppfann krutet?",
+      "choices": [
+        "Indien",
+        "Kina",
+        "Persien",
+        "Egypten"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas den person som ofta nämns som världens första programmerare?",
+      "choices": [
+        "Grace Hopper",
+        "Ada Lovelace",
+        "Hedy Lamarr",
+        "Katherine Johnson"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken uppfinning revolutionerade boktryckandet på 1400-talet?",
+      "choices": [
+        "Skrivmaskinen",
+        "Gutenbergs tryckpress",
+        "Litografin",
+        "Kopiatorn"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad mäter enheten 'byte' i datorvärlden?",
+      "choices": [
+        "Hastighet",
+        "Datamängd",
+        "Spänning",
+        "Upplösning"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket transportmedel demonstrerade bröderna Wright 1903?",
+      "choices": [
+        "Bilen",
+        "Flygplanet",
+        "Helikoptern",
+        "Ångloket"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem utvecklade webben (World Wide Web) omkring 1989–1991?",
+      "choices": [
+        "Bill Gates",
+        "Tim Berners-Lee",
+        "Steve Jobs",
+        "Vint Cerf"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket material gjorde halvledare och därmed datorer möjliga?",
+      "choices": [
+        "Koppar",
+        "Kisel",
+        "Aluminium",
+        "Grafit"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en självgående algoritm som lär sig av data?",
+      "choices": [
+        "Kompilator",
+        "Maskininlärning",
+        "Operativsystem",
+        "Protokoll"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken svensk uppfinning av Håkan Lans rör navigation till sjöss/luft?",
+      "choices": [
+        "GPS-mottagaren",
+        "Datormusen",
+        "STDMA/AIS",
+        "Blåtand"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "truefalse",
+      "text": "Den första datormusen byggdes på 1960-talet.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Internet och World Wide Web är exakt samma sak.",
+      "correct": 1
+    }
+  ]
+}

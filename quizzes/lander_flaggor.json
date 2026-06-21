@@ -1,0 +1,147 @@
+{
+  "id": "lander_flaggor",
+  "title": "Länder & flaggor",
+  "description": "Symboler och nationer.",
+  "questions": [
+    {
+      "text": "Vilket lands flagga har en röd cirkel på vit botten?",
+      "choices": [
+        "Kina",
+        "Japan",
+        "Bangladesh",
+        "Sydkorea"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land har en lönnlöv i sin flagga?",
+      "choices": [
+        "USA",
+        "Kanada",
+        "Australien",
+        "Nya Zeeland"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är det enda landet vars flagga inte är rektangulär?",
+      "choices": [
+        "Schweiz",
+        "Nepal",
+        "Vatikanstaten",
+        "Bhutan"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket lands flagga kallas 'Union Jack'?",
+      "choices": [
+        "USA",
+        "Storbritannien",
+        "Australien",
+        "Irland"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land har en cederträd i sin flagga?",
+      "choices": [
+        "Libanon",
+        "Israel",
+        "Cypern",
+        "Jordanien"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilket land har världens folkrikaste demokrati?",
+      "choices": [
+        "USA",
+        "Indien",
+        "Indonesien",
+        "Brasilien"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land kallades tidigare Burma?",
+      "choices": [
+        "Thailand",
+        "Myanmar",
+        "Kambodja",
+        "Laos"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket afrikanskt land koloniserades aldrig fullt ut av europeiska makter?",
+      "choices": [
+        "Kenya",
+        "Etiopien",
+        "Ghana",
+        "Senegal"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land har flest invånare i Sydamerika?",
+      "choices": [
+        "Argentina",
+        "Brasilien",
+        "Colombia",
+        "Peru"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket lands flagga har en drake?",
+      "choices": [
+        "Bhutan",
+        "Wales (del av UK)",
+        "Kina",
+        "Vietnam"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilket land har städerna Auckland och Wellington?",
+      "choices": [
+        "Australien",
+        "Nya Zeeland",
+        "Sydafrika",
+        "Kanada"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är världens nyaste självständiga land (2011)?",
+      "choices": [
+        "Kosovo",
+        "Sydsudan",
+        "Montenegro",
+        "Östtimor"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land har formen som ofta jämförs med en drake och har Hanoi som huvudstad?",
+      "choices": [
+        "Thailand",
+        "Vietnam",
+        "Filippinerna",
+        "Malaysia"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Nepals flagga består av två trianglar.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Australien och Nya Zeeland har identiska flaggor.",
+      "correct": 1
+    }
+  ]
+}

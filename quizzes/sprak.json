@@ -1,0 +1,147 @@
+{
+  "id": "sprak",
+  "title": "Språk",
+  "description": "Lingvistik och världens språk.",
+  "questions": [
+    {
+      "text": "Vilket språk har flest modersmålstalare i världen?",
+      "choices": [
+        "Engelska",
+        "Mandarin (kinesiska)",
+        "Spanska",
+        "Hindi"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket alfabet använder ryskan?",
+      "choices": [
+        "Latinska",
+        "Kyrilliska",
+        "Grekiska",
+        "Arabiska"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket språk är ett av de officiella i Schweiz men talas av minst?",
+      "choices": [
+        "Tyska",
+        "Franska",
+        "Italienska",
+        "Rätoromanska"
+      ],
+      "correct": 3
+    },
+    {
+      "text": "Vilken språkfamilj tillhör svenska, tyska och engelska?",
+      "choices": [
+        "Romanska",
+        "Germanska",
+        "Slaviska",
+        "Keltiska"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas ett ord som stavas likadant baklänges, som 'naturrutan'?",
+      "choices": [
+        "Anagram",
+        "Palindrom",
+        "Homonym",
+        "Synonym"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket språk är världens mest använda andraspråk?",
+      "choices": [
+        "Spanska",
+        "Engelska",
+        "Franska",
+        "Arabiska"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Från vilket språk kommer de flesta latinska lånorden i engelskan via 1066?",
+      "choices": [
+        "Spanska",
+        "Franska (normandiska)",
+        "Tyska",
+        "Italienska"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket språk skrivs med tecken som kallas 'hangul'?",
+      "choices": [
+        "Japanska",
+        "Koreanska",
+        "Vietnamesiska",
+        "Thailändska"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas studiet av ords ursprung?",
+      "choices": [
+        "Semantik",
+        "Etymologi",
+        "Fonetik",
+        "Syntax"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är det enda officiella språket i Brasilien?",
+      "choices": [
+        "Spanska",
+        "Portugisiska",
+        "Engelska",
+        "Franska"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas ett ord som låter likadant men stavas olika, t.ex. 'kock' och 'kock'?",
+      "choices": [
+        "Homofon",
+        "Antonym",
+        "Hyperonym",
+        "Metafor"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilket dött språk är de romanska språkens ursprung?",
+      "choices": [
+        "Grekiska",
+        "Latin",
+        "Etruskiska",
+        "Sanskrit"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket språk har flest officiella talare i Indien som nationellt språk?",
+      "choices": [
+        "Engelska",
+        "Hindi",
+        "Bengali",
+        "Tamil"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Finska tillhör inte den indoeuropeiska språkfamiljen.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Esperanto är ett naturligt uppkommet folkspråk.",
+      "correct": 1
+    }
+  ]
+}

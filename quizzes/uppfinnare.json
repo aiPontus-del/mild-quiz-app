@@ -1,0 +1,147 @@
+{
+  "id": "uppfinnare",
+  "title": "Uppfinnare & forskare",
+  "description": "Personerna bakom genombrotten.",
+  "questions": [
+    {
+      "text": "Vem utvecklade relativitetsteorierna?",
+      "choices": [
+        "Niels Bohr",
+        "Albert Einstein",
+        "Max Planck",
+        "Werner Heisenberg"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken forskare upptäckte radioaktivitet tillsammans med sin man och fick två Nobelpris?",
+      "choices": [
+        "Lise Meitner",
+        "Marie Curie",
+        "Rosalind Franklin",
+        "Dorothy Hodgkin"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem formulerade rörelselagarna och den klassiska gravitationen?",
+      "choices": [
+        "Galilei",
+        "Newton",
+        "Kepler",
+        "Halley"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem upptäckte penicillinet 1928?",
+      "choices": [
+        "Joseph Lister",
+        "Alexander Fleming",
+        "Louis Pasteur",
+        "Edward Jenner"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilka två forskare beskrev DNA:s dubbelspiral 1953?",
+      "choices": [
+        "Mendel och Morgan",
+        "Watson och Crick",
+        "Darwin och Wallace",
+        "Pauling och Franklin"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem uppfann det moderna periodiska systemet?",
+      "choices": [
+        "Dalton",
+        "Mendelejev",
+        "Lavoisier",
+        "Avogadro"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken forskare lade grunden för ärftlighetsläran genom ärtväxter?",
+      "choices": [
+        "Darwin",
+        "Mendel",
+        "Lamarck",
+        "Linné"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem uppfann telegrafen och koden med punkter och streck?",
+      "choices": [
+        "Bell",
+        "Morse",
+        "Marconi",
+        "Edison"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken fysiker föreslog kvantteorins grundidé (energikvanta)?",
+      "choices": [
+        "Bohr",
+        "Planck",
+        "Schrödinger",
+        "Fermi"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem utvecklade den första effektiva ångmaskinen för industrin?",
+      "choices": [
+        "George Stephenson",
+        "James Watt",
+        "Thomas Newcomen",
+        "Henry Ford"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken vetenskapsman uppfann växelströmssystem och Tesla-spolen?",
+      "choices": [
+        "Edison",
+        "Nikola Tesla",
+        "Faraday",
+        "Ampère"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem upptäckte att jorden inte är universums centrum (heliocentrism)?",
+      "choices": [
+        "Ptolemaios",
+        "Kopernikus",
+        "Tycho Brahe",
+        "Galilei"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken kemist anses vara den moderna kemins fader?",
+      "choices": [
+        "Boyle",
+        "Lavoisier",
+        "Priestley",
+        "Dalton"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Galileo Galilei förbättrade teleskopet och observerade Jupiters månar.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Isaac Newton publicerade evolutionsteorin.",
+      "correct": 1
+    }
+  ]
+}

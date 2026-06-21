@@ -1,0 +1,147 @@
+{
+  "id": "nittonhundratalet",
+  "title": "1900-talet",
+  "description": "Krig, teknik och förändring.",
+  "questions": [
+    {
+      "text": "Vilket år började andra världskriget i Europa?",
+      "choices": [
+        "1938",
+        "1939",
+        "1940",
+        "1941"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket år sköts USA:s president John F. Kennedy?",
+      "choices": [
+        "1960",
+        "1963",
+        "1965",
+        "1968"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallades den ideologiska konflikten mellan USA och Sovjet efter 1945?",
+      "choices": [
+        "Stora kriget",
+        "Kalla kriget",
+        "Vinterkriget",
+        "Sexdagarskriget"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket år landade människor på månen första gången?",
+      "choices": [
+        "1965",
+        "1969",
+        "1971",
+        "1973"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land sköt upp den första satelliten Sputnik (1957)?",
+      "choices": [
+        "USA",
+        "Sovjetunionen",
+        "Kina",
+        "Storbritannien"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem var Sydafrikas president efter apartheids fall, frigiven 1990?",
+      "choices": [
+        "Desmond Tutu",
+        "Nelson Mandela",
+        "F.W. de Klerk",
+        "Jacob Zuma"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken ekonomisk kris startade med börskraschen 1929?",
+      "choices": [
+        "Oljekrisen",
+        "Den stora depressionen",
+        "Finanskrisen",
+        "Hyperinflationen"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket år upplöstes Sovjetunionen?",
+      "choices": [
+        "1989",
+        "1991",
+        "1993",
+        "1995"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken indisk ledare förespråkade ickevåld i kampen för självständighet?",
+      "choices": [
+        "Nehru",
+        "Gandhi",
+        "Bose",
+        "Jinnah"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket vaccin utvecklade Jonas Salk på 1950-talet?",
+      "choices": [
+        "Mässling",
+        "Polio",
+        "Smittkoppor",
+        "Influensa"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken mur delade en tysk stad 1961–1989?",
+      "choices": [
+        "Hadrianus mur",
+        "Berlinmuren",
+        "Kinesiska muren",
+        "Atlantvallen"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem höll talet 'I Have a Dream' 1963?",
+      "choices": [
+        "Malcolm X",
+        "Martin Luther King",
+        "Rosa Parks",
+        "Barack Obama"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket företag lanserade persondatorn Macintosh 1984?",
+      "choices": [
+        "IBM",
+        "Apple",
+        "Microsoft",
+        "Commodore"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Första världskriget pågick 1914–1918.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Människan landade på Mars under 1900-talet.",
+      "correct": 1
+    }
+  ]
+}

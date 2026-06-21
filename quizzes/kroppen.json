@@ -1,0 +1,147 @@
+{
+  "id": "kroppen",
+  "title": "Människokroppen",
+  "description": "Anatomi och fysiologi.",
+  "questions": [
+    {
+      "text": "Vilket är kroppens längsta ben?",
+      "choices": [
+        "Skenbenet",
+        "Lårbenet",
+        "Överarmsbenet",
+        "Vadbenet"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket hormon sänker blodsockret?",
+      "choices": [
+        "Glukagon",
+        "Insulin",
+        "Adrenalin",
+        "Kortisol"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många kotor har en normal mänsklig ryggrad?",
+      "choices": [
+        "26 (33 inkl. sammanvuxna)",
+        "24",
+        "30",
+        "20"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken kroppsdel producerar galla?",
+      "choices": [
+        "Gallblåsan",
+        "Levern",
+        "Bukspottkörteln",
+        "Mjälten"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter det minsta benet i kroppen, beläget i örat?",
+      "choices": [
+        "Hammaren",
+        "Städet",
+        "Stigbygeln",
+        "Tinningbenet"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken blodgrupp kallas universalgivare?",
+      "choices": [
+        "AB+",
+        "0−",
+        "A+",
+        "B−"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken del av hjärnan styr balans och koordination?",
+      "choices": [
+        "Storhjärnan",
+        "Lillhjärnan",
+        "Hjärnstammen",
+        "Hypofysen"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas de rör som leder ägg från äggstockarna?",
+      "choices": [
+        "Urinledare",
+        "Äggledare",
+        "Sädesledare",
+        "Lymfkärl"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är kroppens största inre organ?",
+      "choices": [
+        "Hjärtat",
+        "Levern",
+        "Lungorna",
+        "Njurarna"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter proteinet i röda blodkroppar som binder syre?",
+      "choices": [
+        "Keratin",
+        "Hemoglobin",
+        "Kollagen",
+        "Myoglobin"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många liter blod har en vuxen människa ungefär?",
+      "choices": [
+        "3",
+        "5",
+        "8",
+        "10"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken körtel kallas kroppens 'huvudkörtel' och styr andra hormoner?",
+      "choices": [
+        "Sköldkörteln",
+        "Hypofysen",
+        "Binjuren",
+        "Tallkottkörteln"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas inflammation i blindtarmsbihanget?",
+      "choices": [
+        "Gastrit",
+        "Appendicit",
+        "Kolit",
+        "Pankreatit"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Hjärtats vänstra kammare pumpar blod ut i stora kretsloppet.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Levern kan inte återbildas efter skada.",
+      "correct": 1
+    }
+  ]
+}

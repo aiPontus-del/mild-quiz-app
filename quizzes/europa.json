@@ -1,0 +1,147 @@
+{
+  "id": "europa",
+  "title": "Europa",
+  "description": "Länder, gränser och fakta.",
+  "questions": [
+    {
+      "text": "Vilket är Europas till ytan minsta land?",
+      "choices": [
+        "Monaco",
+        "Vatikanstaten",
+        "San Marino",
+        "Malta"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken flod rinner genom Wien, Budapest och Belgrad?",
+      "choices": [
+        "Rhen",
+        "Donau",
+        "Elbe",
+        "Volga"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land har inte euro som valuta?",
+      "choices": [
+        "Tyskland",
+        "Polen",
+        "Frankrike",
+        "Italien"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är Europas folkrikaste land?",
+      "choices": [
+        "Tyskland",
+        "Frankrike",
+        "Ryssland",
+        "Storbritannien"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken bergskedja skiljer Frankrike från Spanien?",
+      "choices": [
+        "Alperna",
+        "Pyrenéerna",
+        "Karpaterna",
+        "Apenninerna"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land omger den lilla staten San Marino?",
+      "choices": [
+        "Frankrike",
+        "Italien",
+        "Schweiz",
+        "Österrike"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket nordiskt land är inte med i EU?",
+      "choices": [
+        "Sverige",
+        "Danmark",
+        "Norge",
+        "Finland"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken huvudstad ligger på två kontinenter?",
+      "choices": [
+        "Aten",
+        "Istanbul",
+        "Moskva",
+        "Lissabon"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land kallas ofta 'de tusen sjöarnas land'?",
+      "choices": [
+        "Sverige",
+        "Finland",
+        "Estland",
+        "Norge"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är EU:s största land till ytan?",
+      "choices": [
+        "Tyskland",
+        "Frankrike",
+        "Spanien",
+        "Sverige"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land delas av floden och staden vid 'Öresund' med Sverige?",
+      "choices": [
+        "Tyskland",
+        "Danmark",
+        "Norge",
+        "Polen"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land har Lissabon som huvudstad?",
+      "choices": [
+        "Spanien",
+        "Portugal",
+        "Italien",
+        "Grekland"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket litet land ligger mellan Frankrike och Spanien i Pyrenéerna?",
+      "choices": [
+        "Andorra",
+        "Monaco",
+        "Liechtenstein",
+        "Luxemburg"
+      ],
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Reykjavik är världens nordligaste huvudstad.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Schweiz är medlem i Europeiska unionen.",
+      "correct": 1
+    }
+  ]
+}

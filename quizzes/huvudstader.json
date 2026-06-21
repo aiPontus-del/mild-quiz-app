@@ -1,0 +1,157 @@
+{
+  "id": "huvudstader",
+  "title": "Huvudstäder",
+  "description": "Inte alltid den största staden.",
+  "questions": [
+    {
+      "text": "Vad är Kazakstans huvudstad?",
+      "choices": [
+        "Almaty",
+        "Astana",
+        "Bisjkek",
+        "Tasjkent"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad är Australiens huvudstad?",
+      "choices": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Perth"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad är Kanadas huvudstad?",
+      "choices": [
+        "Toronto",
+        "Ottawa",
+        "Montreal",
+        "Vancouver"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad är Schweiz huvudstad?",
+      "choices": [
+        "Zürich",
+        "Genève",
+        "Bern",
+        "Basel"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad är Nya Zeelands huvudstad?",
+      "choices": [
+        "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Hamilton"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad är Brasiliens huvudstad?",
+      "choices": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Brasília",
+        "Salvador"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad är Marockos huvudstad?",
+      "choices": [
+        "Casablanca",
+        "Marrakech",
+        "Rabat",
+        "Fès"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad är Vietnams huvudstad?",
+      "choices": [
+        "Ho Chi Minh-staden",
+        "Hanoi",
+        "Da Nang",
+        "Hue"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken är Sydafrikas administrativa huvudstad?",
+      "choices": [
+        "Kapstaden",
+        "Johannesburg",
+        "Pretoria",
+        "Durban"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad är Myanmars huvudstad?",
+      "choices": [
+        "Rangoon",
+        "Mandalay",
+        "Naypyidaw",
+        "Bago"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad är Nigerias huvudstad?",
+      "choices": [
+        "Lagos",
+        "Abuja",
+        "Kano",
+        "Ibadan"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad är Turkiets huvudstad?",
+      "choices": [
+        "Istanbul",
+        "Ankara",
+        "Izmir",
+        "Bursa"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad är Liechtensteins huvudstad?",
+      "choices": [
+        "Vaduz",
+        "Schaan",
+        "Triesen",
+        "Balzers"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vad är Sri Lankas administrativa huvudstad?",
+      "choices": [
+        "Colombo",
+        "Kandy",
+        "Sri Jayawardenepura Kotte",
+        "Galle"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad är Bolivias säte för regeringen?",
+      "choices": [
+        "Sucre",
+        "La Paz",
+        "Santa Cruz",
+        "Cochabamba"
+      ],
+      "correct": 1
+    }
+  ]
+}

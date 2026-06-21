@@ -1,0 +1,147 @@
+{
+  "id": "musik",
+  "title": "Musik",
+  "description": "Klassiskt till modernt.",
+  "questions": [
+    {
+      "text": "Vem komponerade 'Ödesymfonin' (symfoni nr 5)?",
+      "choices": [
+        "Mozart",
+        "Beethoven",
+        "Bach",
+        "Brahms"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många strängar har en standardgitarr?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "12"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken tonart har inga fasta förtecken?",
+      "choices": [
+        "G-dur",
+        "C-dur",
+        "D-dur",
+        "F-dur"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem komponerade operan 'Trollflöjten'?",
+      "choices": [
+        "Verdi",
+        "Mozart",
+        "Wagner",
+        "Puccini"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas tempot 'långsamt' i musik?",
+      "choices": [
+        "Allegro",
+        "Adagio",
+        "Presto",
+        "Vivace"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket instrument har 88 tangenter?",
+      "choices": [
+        "Orgel",
+        "Piano",
+        "Cembalo",
+        "Dragspel"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken brittisk grupp gav ut albumet 'Abbey Road'?",
+      "choices": [
+        "The Rolling Stones",
+        "The Beatles",
+        "The Who",
+        "Pink Floyd"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en grupp på fyra musiker?",
+      "choices": [
+        "Trio",
+        "Kvartett",
+        "Kvintett",
+        "Duo"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken barockkompositör skrev 'De fyra årstiderna'?",
+      "choices": [
+        "Bach",
+        "Vivaldi",
+        "Händel",
+        "Corelli"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många musiker spelar i en standard stråkkvartett?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket notvärde är hälften så långt som en fjärdedelsnot?",
+      "choices": [
+        "Helnot",
+        "Halvnot",
+        "Åttondelsnot",
+        "Sextondelsnot"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken kompositör blev döv men fortsatte komponera?",
+      "choices": [
+        "Chopin",
+        "Beethoven",
+        "Liszt",
+        "Schubert"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas röstläget mellan sopran och alt?",
+      "choices": [
+        "Tenor",
+        "Mezzosopran",
+        "Baryton",
+        "Bas"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "En oktav omfattar tolv halvtoner.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Jazz har sina rötter i medeltidens Europa.",
+      "correct": 1
+    }
+  ]
+}

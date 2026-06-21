@@ -1,0 +1,147 @@
+{
+  "id": "natur",
+  "title": "Natur & vildmark",
+  "description": "Botanik, svampar och vilda djur.",
+  "questions": [
+    {
+      "text": "Vad kallas läran om svampar?",
+      "choices": [
+        "Botanik",
+        "Mykologi",
+        "Zoologi",
+        "Ekologi"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket träd kan bli äldst av dessa?",
+      "choices": [
+        "Björk",
+        "Ek",
+        "Tall",
+        "Asp"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken växt fångar och bryter ner insekter?",
+      "choices": [
+        "Maskros",
+        "Sileshår",
+        "Ormbunke",
+        "Vitsippa"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas honungsbinas dans som visar väg till mat?",
+      "choices": [
+        "Cirkeldans",
+        "Vickdans (svängdans)",
+        "Spiraldans",
+        "Parningsdans"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket svenskt rovdjur är störst?",
+      "choices": [
+        "Varg",
+        "Brunbjörn",
+        "Lodjur",
+        "Järv"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas djur som äter as (döda djur)?",
+      "choices": [
+        "Herbivorer",
+        "Asätare",
+        "Predatorer",
+        "Filtrerare"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken fågel är känd för att härma andra ljud?",
+      "choices": [
+        "Koltrast",
+        "Stare",
+        "Härmtrast",
+        "Lärka"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad heter processen då vatten tas upp och avges av träd till luften?",
+      "choices": [
+        "Fotosyntes",
+        "Transpiration",
+        "Kondensation",
+        "Respiration"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket bär är giftigt?",
+      "choices": [
+        "Blåbär",
+        "Lingon",
+        "Olvon (i mängd)",
+        "Hjortron"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad kallas en växt som lever i flera år?",
+      "choices": [
+        "Ettårig",
+        "Tvåårig",
+        "Perenn (flerårig)",
+        "Annuell"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilket djur bygger dammar och fäller träd?",
+      "choices": [
+        "Utter",
+        "Bäver",
+        "Mink",
+        "Bisam"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken är Sveriges vanligaste hackspett?",
+      "choices": [
+        "Gröngöling",
+        "Större hackspett",
+        "Spillkråka",
+        "Mindre hackspett"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas symbiosen mellan svamp och alg som bildar lav?",
+      "choices": [
+        "Parasitism",
+        "Mutualism",
+        "Kommensalism",
+        "Predation"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Älgen är ett hjortdjur.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Alla svampar är ätliga.",
+      "correct": 1
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "sport",
+  "title": "Sport",
+  "description": "Historiska fakta och regler.",
+  "questions": [
+    {
+      "text": "Hur ofta hålls sommar-OS normalt?",
+      "choices": [
+        "Vartannat år",
+        "Vart fjärde år",
+        "Vart femte år",
+        "Varje år"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "I vilket land uppfanns det moderna fotbollsregelverket (1863)?",
+      "choices": [
+        "Brasilien",
+        "England",
+        "Italien",
+        "Tyskland"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många spelare har ett fotbollslag på planen?",
+      "choices": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken stad stod värd för de första moderna OS (1896)?",
+      "choices": [
+        "Paris",
+        "Aten",
+        "London",
+        "Rom"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur lång är en marathonlöpning?",
+      "choices": [
+        "32,2 km",
+        "42,195 km",
+        "50 km",
+        "26 km"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "I tennis: vad kallas ställningen 40–40?",
+      "choices": [
+        "Fördel",
+        "Lika (deuce)",
+        "Game",
+        "Set"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land har vunnit flest VM-titlar i herrfotboll?",
+      "choices": [
+        "Tyskland",
+        "Brasilien",
+        "Italien",
+        "Argentina"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många ringar finns i den olympiska symbolen?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "I vilken sport används termerna 'birdie' och 'bogey'?",
+      "choices": [
+        "Tennis",
+        "Golf",
+        "Cricket",
+        "Bowling"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många spelare har ett ishockeylag på isen (inkl. målvakt)?",
+      "choices": [
+        "5",
+        "6",
+        "7",
+        "11"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken cyklist­tävling avslutas traditionellt i Paris?",
+      "choices": [
+        "Giro d'Italia",
+        "Tour de France",
+        "Vuelta a España",
+        "Paris–Roubaix"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter den högsta nivån i internationell rugby (världsmästerskapet)?",
+      "choices": [
+        "Super Bowl",
+        "Rugby World Cup",
+        "Six Nations",
+        "The Ashes"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "I basket: hur många poäng ger en korg utanför trepoängslinjen?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "truefalse",
+      "text": "Ett fotbollslags målvakt får ta bollen med händerna i eget straffområde.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Ett tennisset vinns alltid med exakt sex game.",
+      "correct": 1
+    }
+  ]
+}

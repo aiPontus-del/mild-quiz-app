@@ -1,0 +1,147 @@
+{
+  "id": "litteratur",
+  "title": "Litteratur",
+  "description": "Författare och verk.",
+  "questions": [
+    {
+      "text": "Vem skrev 'Hamlet' och 'Macbeth'?",
+      "choices": [
+        "Dickens",
+        "Shakespeare",
+        "Marlowe",
+        "Chaucer"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken rysk författare skrev 'Krig och fred'?",
+      "choices": [
+        "Dostojevskij",
+        "Tolstoj",
+        "Tjechov",
+        "Turgenjev"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skapade detektiven Sherlock Holmes?",
+      "choices": [
+        "Agatha Christie",
+        "Arthur Conan Doyle",
+        "Edgar Allan Poe",
+        "Wilkie Collins"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken svensk författare skrev 'Nils Holgerssons underbara resa'?",
+      "choices": [
+        "Astrid Lindgren",
+        "Selma Lagerlöf",
+        "Pär Lagerkvist",
+        "Vilhelm Moberg"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skrev '1984'?",
+      "choices": [
+        "Aldous Huxley",
+        "George Orwell",
+        "Ray Bradbury",
+        "H.G. Wells"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket epos tillskrivs Homeros?",
+      "choices": [
+        "Aeneiden",
+        "Iliaden",
+        "Den gudomliga komedin",
+        "Beowulf"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skrev 'Brott och straff'?",
+      "choices": [
+        "Tolstoj",
+        "Dostojevskij",
+        "Gogol",
+        "Nabokov"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken författare skapade Sagan om ringen?",
+      "choices": [
+        "C.S. Lewis",
+        "J.R.R. Tolkien",
+        "George R.R. Martin",
+        "Ursula Le Guin"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skrev 'Den gudomliga komedin'?",
+      "choices": [
+        "Petrarca",
+        "Dante",
+        "Boccaccio",
+        "Vergilius"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken kolombiansk författare skrev 'Hundra år av ensamhet'?",
+      "choices": [
+        "Borges",
+        "García Márquez",
+        "Vargas Llosa",
+        "Cortázar"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skrev 'Stolthet och fördom'?",
+      "choices": [
+        "Charlotte Brontë",
+        "Jane Austen",
+        "Emily Brontë",
+        "Mary Shelley"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken svensk författare skrev 'Utvandrarna'?",
+      "choices": [
+        "August Strindberg",
+        "Vilhelm Moberg",
+        "Harry Martinson",
+        "Ivar Lo-Johansson"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skrev pjäsen 'Ett drömspel'?",
+      "choices": [
+        "Ibsen",
+        "Strindberg",
+        "Tjechov",
+        "Brecht"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Selma Lagerlöf var första kvinnan att få Nobelpriset i litteratur.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Don Quijote skrevs av en engelsk författare.",
+      "correct": 1
+    }
+  ]
+}

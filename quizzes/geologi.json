@@ -1,0 +1,147 @@
+{
+  "id": "geologi",
+  "title": "Hav, berg & floder",
+  "description": "Jordens geologi.",
+  "questions": [
+    {
+      "text": "Vilket är världens längsta bergskedja ovan vatten?",
+      "choices": [
+        "Himalaya",
+        "Anderna",
+        "Klippiga bergen",
+        "Alperna"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken är världens längsta flod (vanligaste svaret)?",
+      "choices": [
+        "Amazonas",
+        "Nilen",
+        "Yangtze",
+        "Mississippi"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas den process där en kontinentalplatta glider under en annan?",
+      "choices": [
+        "Erosion",
+        "Subduktion",
+        "Sedimentation",
+        "Veckning"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är jordens största hav?",
+      "choices": [
+        "Atlanten",
+        "Indiska oceanen",
+        "Stilla havet",
+        "Norra ishavet"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad kallas flytande sten under jordskorpan?",
+      "choices": [
+        "Lava",
+        "Magma",
+        "Basalt",
+        "Obsidian"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken bergart bildas av avkyld lava?",
+      "choices": [
+        "Kalksten",
+        "Granit",
+        "Basalt",
+        "Sandsten"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad kallas zonen runt Stilla havet med många vulkaner och jordbävningar?",
+      "choices": [
+        "Sahelbältet",
+        "Eldringen",
+        "Rift Valley",
+        "Tethys"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken är jordens lägsta punkt på land (vattenyta)?",
+      "choices": [
+        "Döda havet",
+        "Kaspiska havet",
+        "Saltsjön",
+        "Aralsjön"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vad mäter Mohs skala?",
+      "choices": [
+        "Hårdhet hos mineral",
+        "Jordbävningar",
+        "Höjd",
+        "Temperatur"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken flod är längst i Nordamerika (system)?",
+      "choices": [
+        "Colorado",
+        "Mississippi–Missouri",
+        "Yukon",
+        "Rio Grande"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en glaciärs avlagring av sten och grus?",
+      "choices": [
+        "Delta",
+        "Morän",
+        "Sediment",
+        "Rev"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är världens högsta vattenfall?",
+      "choices": [
+        "Niagarafallen",
+        "Angelfallen",
+        "Victoriafallen",
+        "Iguazú"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken typ av bergart är marmor?",
+      "choices": [
+        "Magmatisk",
+        "Sedimentär",
+        "Metamorf",
+        "Vulkanisk"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "truefalse",
+      "text": "Diamanter bildas under högt tryck djupt i jorden.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Granit är en sedimentär bergart.",
+      "correct": 1
+    }
+  ]
+}

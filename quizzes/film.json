@@ -1,0 +1,147 @@
+{
+  "id": "film",
+  "title": "Film",
+  "description": "Klassiker och regissörer.",
+  "questions": [
+    {
+      "text": "Vem regisserade 'Pulp Fiction'?",
+      "choices": [
+        "Scorsese",
+        "Tarantino",
+        "Coppola",
+        "Fincher"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken film vann första Oscar för bästa film (1929)?",
+      "choices": [
+        "Vingar (Wings)",
+        "Casablanca",
+        "Gone with the Wind",
+        "Ben-Hur"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vem regisserade 'Psycho' och 'Fåglarna'?",
+      "choices": [
+        "Kubrick",
+        "Hitchcock",
+        "Welles",
+        "Lean"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "I vilken film säger en karaktär 'I'm gonna make him an offer he can't refuse'?",
+      "choices": [
+        "Goodfellas",
+        "Gudfadern",
+        "Scarface",
+        "Casino"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken regissör gjorde '2001: Ett rymdäventyr'?",
+      "choices": [
+        "Spielberg",
+        "Kubrick",
+        "Lucas",
+        "Ridley Scott"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken skådespelare spelar Vito Corleone som ung i Gudfadern II?",
+      "choices": [
+        "Al Pacino",
+        "Robert De Niro",
+        "Marlon Brando",
+        "Joe Pesci"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem regisserade 'Schindler's List' och 'E.T.'?",
+      "choices": [
+        "Spielberg",
+        "Cameron",
+        "Nolan",
+        "Zemeckis"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilket land kommer regissören Akira Kurosawa ifrån?",
+      "choices": [
+        "Kina",
+        "Japan",
+        "Sydkorea",
+        "Taiwan"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken film utspelar sig till stor del på skeppet RMS Titanic (1997)?",
+      "choices": [
+        "Poseidon",
+        "Titanic",
+        "The Abyss",
+        "Master and Commander"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem regisserade 'Inception' och 'Interstellar'?",
+      "choices": [
+        "Villeneuve",
+        "Nolan",
+        "Fincher",
+        "Aronofsky"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken italiensk regissör gjorde 'La Dolce Vita'?",
+      "choices": [
+        "Fellini",
+        "Antonioni",
+        "Visconti",
+        "De Sica"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken skådespelerska vann Oscar för 'La Vie en Rose'?",
+      "choices": [
+        "Marion Cotillard",
+        "Juliette Binoche",
+        "Penélope Cruz",
+        "Cate Blanchett"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vad heter den fiktiva planeten i 'Avatar' (2009)?",
+      "choices": [
+        "Krypton",
+        "Pandora",
+        "Arrakis",
+        "Tatooine"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Stumfilmen var dominerande innan ljudfilmen slog igenom på 1920-talet.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Walt Disney regisserade 'Citizen Kane'.",
+      "correct": 1
+    }
+  ]
+}

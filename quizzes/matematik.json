@@ -1,0 +1,147 @@
+{
+  "id": "matematik",
+  "title": "Matematik",
+  "description": "Tal, geometri och problemlösning.",
+  "questions": [
+    {
+      "text": "Vad kallas ett tal som bara är delbart med 1 och sig självt?",
+      "choices": [
+        "Jämnt tal",
+        "Primtal",
+        "Kvadrattal",
+        "Rationellt tal"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad blir derivatan av x²?",
+      "choices": [
+        "x",
+        "2x",
+        "x³/3",
+        "2"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad är värdet av 0! (noll fakultet)?",
+      "choices": [
+        "0",
+        "1",
+        "odefinierat",
+        "oändligt"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är hypotenusan i en rätvinklig triangel?",
+      "choices": [
+        "Kortaste sidan",
+        "Sidan mittemot räta vinkeln",
+        "En av kateterna",
+        "Höjden"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas talet ungefär 2,718 i matematiken?",
+      "choices": [
+        "Pi",
+        "Eulers tal e",
+        "Gyllene snittet",
+        "Roten ur 2"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många grader är vinkelsumman i en femhörning?",
+      "choices": [
+        "360",
+        "450",
+        "540",
+        "720"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad blir 7 fakultet (7!)?",
+      "choices": [
+        "840",
+        "5040",
+        "720",
+        "40320"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas ett tal som inte kan skrivas som ett bråk, t.ex. π?",
+      "choices": [
+        "Heltal",
+        "Rationellt tal",
+        "Irrationellt tal",
+        "Naturligt tal"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad är logaritmen log₁₀(1000)?",
+      "choices": [
+        "2",
+        "3",
+        "10",
+        "100"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är det gyllene snittets ungefärliga värde?",
+      "choices": [
+        "1,41",
+        "1,62",
+        "2,72",
+        "3,14"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad blir summan av vinklarna i en fyrhörning?",
+      "choices": [
+        "180°",
+        "270°",
+        "360°",
+        "540°"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad kallas en funktion på formen f(x)=ax²+bx+c?",
+      "choices": [
+        "Linjär",
+        "Andragrads (kvadratisk)",
+        "Exponentiell",
+        "Logaritmisk"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket tal är både kvadrat- och kubtal under 100?",
+      "choices": [
+        "16",
+        "36",
+        "64",
+        "81"
+      ],
+      "correct": 2
+    },
+    {
+      "type": "truefalse",
+      "text": "Summan av de tre vinklarna i en triangel är alltid 180°.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Alla primtal är udda.",
+      "correct": 1
+    }
+  ]
+}

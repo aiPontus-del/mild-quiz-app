@@ -1,0 +1,147 @@
+{
+  "id": "varldshistoria",
+  "title": "Världshistoria",
+  "description": "Årtal, makt och vändpunkter.",
+  "questions": [
+    {
+      "text": "Vilket år bröt första världskriget ut?",
+      "choices": [
+        "1912",
+        "1914",
+        "1916",
+        "1918"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken fred avslutade trettioåriga kriget 1648?",
+      "choices": [
+        "Westfaliska freden",
+        "Freden i Versailles",
+        "Wienkongressen",
+        "Freden i Brömsebro"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vem var rysk tsar vid revolutionen 1917?",
+      "choices": [
+        "Alexander II",
+        "Nikolaj II",
+        "Peter den store",
+        "Ivan IV"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket år korsade Caesar floden Rubicon?",
+      "choices": [
+        "49 f.Kr.",
+        "27 f.Kr.",
+        "44 f.Kr.",
+        "31 f.Kr."
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilket imperium erövrade Konstantinopel 1453?",
+      "choices": [
+        "Det romerska",
+        "Det osmanska",
+        "Det mongoliska",
+        "Det persiska"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skrev '95 teser' och inledde reformationen?",
+      "choices": [
+        "Calvin",
+        "Luther",
+        "Zwingli",
+        "Knox"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket slag 1815 innebar Napoleons slutgiltiga nederlag?",
+      "choices": [
+        "Austerlitz",
+        "Waterloo",
+        "Leipzig",
+        "Borodino"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken civilisation byggde staden Machu Picchu?",
+      "choices": [
+        "Aztekerna",
+        "Mayafolket",
+        "Inkariket",
+        "Olmekerna"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilket år förklarade USA sin självständighet?",
+      "choices": [
+        "1763",
+        "1776",
+        "1783",
+        "1789"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem enade större delen av Italien på 1860-talet militärt?",
+      "choices": [
+        "Garibaldi",
+        "Cavour",
+        "Mazzini",
+        "Mussolini"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken dynasti byggde merparten av Kinesiska muren som syns idag?",
+      "choices": [
+        "Han",
+        "Tang",
+        "Ming",
+        "Qing"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilket fördrag 1919 avslutade första världskriget formellt?",
+      "choices": [
+        "Versaillesfreden",
+        "Tordesillasfördraget",
+        "Maastrichtfördraget",
+        "Utrechtfreden"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken farao är känd för sin nästan intakta grav, funnen 1922?",
+      "choices": [
+        "Ramses II",
+        "Tutankhamon",
+        "Echnaton",
+        "Khufu"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Franska revolutionen inleddes 1789.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Romarriket föll i väst år 1066.",
+      "correct": 1
+    }
+  ]
+}

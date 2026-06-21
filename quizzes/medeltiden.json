@@ -1,0 +1,147 @@
+{
+  "id": "medeltiden",
+  "title": "Medeltiden",
+  "description": "Riddare, pest och kungar.",
+  "questions": [
+    {
+      "text": "Vad kallas den farsot som dödade en stor del av Europas befolkning på 1300-talet?",
+      "choices": [
+        "Spanska sjukan",
+        "Digerdöden",
+        "Kolera",
+        "Smittkoppor"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket årtal anses ofta markera medeltidens slut (Konstantinopels fall)?",
+      "choices": [
+        "1066",
+        "1453",
+        "1492",
+        "1517"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallades det system där bönder arbetade åt en herre mot beskydd?",
+      "choices": [
+        "Kapitalism",
+        "Feodalism",
+        "Merkantilism",
+        "Demokrati"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilka krigare seglade och plundrade från Norden ca 800–1050?",
+      "choices": [
+        "Goterna",
+        "Vikingarna",
+        "Hunnerna",
+        "Frankerna"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad var korstågen i grunden?",
+      "choices": [
+        "Handelsexpeditioner",
+        "Religiösa militärtåg mot Heliga landet",
+        "Upptäcktsresor",
+        "Bondeuppror"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem var frankisk kung som kröntes till kejsare år 800?",
+      "choices": [
+        "Klodvig",
+        "Karl den store",
+        "Otto I",
+        "Henrik IV"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken byggnadsstil med spetsbågar och höga katedraler dominerade högmedeltiden?",
+      "choices": [
+        "Romansk",
+        "Gotik",
+        "Barock",
+        "Rokoko"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket dokument från 1215 begränsade den engelske kungens makt?",
+      "choices": [
+        "Magna Carta",
+        "Bill of Rights",
+        "Domedagsboken",
+        "Habeas Corpus"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken fransk hjältinna ledde trupper under hundraårskriget?",
+      "choices": [
+        "Eleonora",
+        "Jeanne d'Arc",
+        "Katarina",
+        "Isabella"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallades de muslimska lärda centra på Iberiska halvön under medeltiden?",
+      "choices": [
+        "Bysans",
+        "Al-Andalus",
+        "Levanten",
+        "Maghreb"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket mongoliskt rike grundades av Djingis khan?",
+      "choices": [
+        "Osmanska riket",
+        "Mongolväldet",
+        "Timuridriket",
+        "Mogulriket"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallades de medeltida skråna i städerna?",
+      "choices": [
+        "Gillen",
+        "Senater",
+        "Klaner",
+        "Falanger"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken religiös institution hade enorm makt i Europa under medeltiden?",
+      "choices": [
+        "Kalifatet",
+        "Katolska kyrkan",
+        "Ortodoxa synoden",
+        "Tempelriddarna"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Vikingatåget mot Lindisfarne 793 brukar markera vikingatidens början.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Boktryckarkonsten fanns i Europa redan på 800-talet.",
+      "correct": 1
+    }
+  ]
+}

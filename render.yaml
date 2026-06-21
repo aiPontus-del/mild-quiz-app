@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: mild-quiz
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Optional: paste an Upstash Redis URL here to make live games survive restarts
+      # - key: REDIS_URL
+      #   sync: false

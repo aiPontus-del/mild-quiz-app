@@ -1,0 +1,11 @@
+{
+  "id": "blandat",
+  "title": "Blandat (visar alla funktioner)",
+  "description": "Bild, video, sant/falskt, flera rätta och dubbla poäng.",
+  "questions": [
+    { "text": "I vilken stad står detta torn?", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/360px-Tour_Eiffel_Wikimedia_Commons.jpg", "choices": ["London", "Paris", "Rom", "Madrid"], "correct": 1, "timeLimit": 20 },
+    { "type": "truefalse", "text": "Sverige har fler sjöar än Norge.", "correct": 0, "timeLimit": 15 },
+    { "type": "multi", "text": "Vilka av dessa är programmeringsspråk? (välj alla rätta)", "choices": ["Python", "HTML", "JavaScript", "Photoshop"], "correct": [0, 2], "timeLimit": 25 },
+    { "text": "Vad heter denna kanin? (dubbla poäng)", "double": true, "video": "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4", "choices": ["Bugs", "Big Buck Bunny", "Roger", "Thumper"], "correct": 1, "timeLimit": 25 }
+  ]
+}

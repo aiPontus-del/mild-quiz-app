@@ -1,0 +1,147 @@
+{
+  "id": "rymden",
+  "title": "Rymden",
+  "description": "Astronomi för nyfikna.",
+  "questions": [
+    {
+      "text": "Vilken planet har solsystemets högsta vulkan, Olympus Mons?",
+      "choices": [
+        "Venus",
+        "Mars",
+        "Merkurius",
+        "Jupiter"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas gränsen runt ett svart hål bortom vilken inget kan fly?",
+      "choices": [
+        "Singularitet",
+        "Händelsehorisont",
+        "Fotonsfär",
+        "Ergosfär"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken är solsystemets största måne?",
+      "choices": [
+        "Titan",
+        "Ganymedes",
+        "Callisto",
+        "Månen"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter den närmaste stjärnan till solen?",
+      "choices": [
+        "Sirius",
+        "Proxima Centauri",
+        "Barnards stjärna",
+        "Vega"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken typ av stjärna är solen klassad som?",
+      "choices": [
+        "Röd jätte",
+        "Gul dvärg",
+        "Vit dvärg",
+        "Blå superjätte"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas det avstånd där jorden ligger från solen (ca 150 miljoner km)?",
+      "choices": [
+        "Ett ljusår",
+        "En parsec",
+        "En astronomisk enhet",
+        "En radian"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken planet roterar i motsatt riktning mot de flesta andra (retrograd)?",
+      "choices": [
+        "Mars",
+        "Venus",
+        "Saturnus",
+        "Neptunus"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter Saturnus största måne, med tjock atmosfär?",
+      "choices": [
+        "Europa",
+        "Titan",
+        "Enceladus",
+        "Rhea"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket rymdteleskop sköts upp 1990 och fick mängder av kända bilder?",
+      "choices": [
+        "James Webb",
+        "Hubble",
+        "Kepler",
+        "Spitzer"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas det teoretiska området med iskalla kroppar långt bortom Neptunus?",
+      "choices": [
+        "Asteroidbältet",
+        "Kuiperbältet",
+        "Oorts moln-bältet",
+        "Van Allen-bältet"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur lång tid tar ljuset ungefär från solen till jorden?",
+      "choices": [
+        "8 sekunder",
+        "8 minuter",
+        "8 timmar",
+        "8 dagar"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken galax är vår närmaste stora grannspiral?",
+      "choices": [
+        "Triangulum",
+        "Andromeda",
+        "Whirlpool",
+        "Sombrero"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en stjärnas explosion i slutet av sitt liv (de tyngsta)?",
+      "choices": [
+        "Nova",
+        "Supernova",
+        "Pulsar",
+        "Kvasar"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Ett ljusår är ett mått på avstånd, inte tid.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Solen kommer en dag att bli ett svart hål.",
+      "correct": 1
+    }
+  ]
+}

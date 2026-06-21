@@ -1,0 +1,147 @@
+{
+  "id": "kemi",
+  "title": "Kemi",
+  "description": "Grundämnen, bindningar och reaktioner.",
+  "questions": [
+    {
+      "text": "Vilket grundämne har den kemiska symbolen 'K'?",
+      "choices": [
+        "Kol",
+        "Kalium",
+        "Krom",
+        "Klor"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en atom som fått laddning genom att ge eller ta upp elektroner?",
+      "choices": [
+        "Isotop",
+        "Jon",
+        "Molekyl",
+        "Radikal"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är det mest elektronegativa grundämnet?",
+      "choices": [
+        "Syre",
+        "Klor",
+        "Fluor",
+        "Kväve"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad är pH-värdet i en neutral lösning vid 25 °C?",
+      "choices": [
+        "0",
+        "7",
+        "10",
+        "14"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken typ av bindning håller samman natrium och klor i koksalt?",
+      "choices": [
+        "Kovalent",
+        "Jonbindning",
+        "Metallbindning",
+        "Vätebindning"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas atomer av samma grundämne med olika antal neutroner?",
+      "choices": [
+        "Joner",
+        "Isotoper",
+        "Allotroper",
+        "Isomerer"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken gas utgör cirka 78 % av atmosfären?",
+      "choices": [
+        "Syre",
+        "Koldioxid",
+        "Kväve",
+        "Argon"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad heter den lättaste metallen?",
+      "choices": [
+        "Aluminium",
+        "Litium",
+        "Natrium",
+        "Magnesium"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket grundämne är flytande vid rumstemperatur och är en metall?",
+      "choices": [
+        "Brom",
+        "Kvicksilver",
+        "Gallium",
+        "Cesium"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas ett ämne som ökar reaktionshastigheten utan att förbrukas?",
+      "choices": [
+        "Reaktant",
+        "Katalysator",
+        "Lösningsmedel",
+        "Produkt"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket tal anger antalet protoner i en atomkärna?",
+      "choices": [
+        "Masstal",
+        "Atomnummer",
+        "Valens",
+        "Oxidationstal"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad bildas vid fullständig förbränning av kolväten?",
+      "choices": [
+        "Kolmonoxid och sot",
+        "Koldioxid och vatten",
+        "Väte och syre",
+        "Metan"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem anses ha skapat det moderna periodiska systemet?",
+      "choices": [
+        "Lavoisier",
+        "Mendelejev",
+        "Bohr",
+        "Dalton"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Ädelgaser reagerar ogärna eftersom deras yttre elektronskal är fyllt.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "En syra har per definition pH över 7.",
+      "correct": 1
+    }
+  ]
+}

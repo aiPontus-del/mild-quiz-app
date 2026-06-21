@@ -1,0 +1,147 @@
+{
+  "id": "sverige",
+  "title": "Sverige",
+  "description": "Historia, geografi och kultur.",
+  "questions": [
+    {
+      "text": "Vilket år infördes allmän och lika rösträtt för män och kvinnor i Sverige (första valet)?",
+      "choices": [
+        "1909",
+        "1921",
+        "1918",
+        "1945"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken svensk kung stupade vid Fredriksten 1718?",
+      "choices": [
+        "Gustav II Adolf",
+        "Karl XII",
+        "Karl XI",
+        "Gustav Vasa"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket landskap är till ytan störst i Sverige?",
+      "choices": [
+        "Norrbotten (Lappland)",
+        "Dalarna",
+        "Jämtland",
+        "Värmland"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken svensk uppfann dynamiten?",
+      "choices": [
+        "Lars Magnus Ericsson",
+        "Alfred Nobel",
+        "Gustaf de Laval",
+        "Carl Edvard Johansson"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket år gick Sverige med i EU?",
+      "choices": [
+        "1991",
+        "1995",
+        "2000",
+        "1986"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem var Sveriges statsminister som mördades 1986?",
+      "choices": [
+        "Tage Erlander",
+        "Olof Palme",
+        "Ingvar Carlsson",
+        "Per Albin Hansson"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken är Sveriges näst längsta älv?",
+      "choices": [
+        "Klarälven",
+        "Dalälven",
+        "Torne älv",
+        "Ångermanälven"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken stad var Sveriges huvudstad innan Stockholm fick sin tydliga ställning?",
+      "choices": [
+        "Sigtuna",
+        "Uppsala",
+        "Birka",
+        "Kalmar"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket krig avslutades med freden i Fredrikshamn 1809, då Sverige förlorade Finland?",
+      "choices": [
+        "Stora nordiska kriget",
+        "Finska kriget",
+        "Pommerska kriget",
+        "Skånska kriget"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem grundade staden Göteborg (regerande kung 1621)?",
+      "choices": [
+        "Gustav Vasa",
+        "Gustav II Adolf",
+        "Karl IX",
+        "Johan III"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken svensk botaniker skapade systemet för att namnge arter?",
+      "choices": [
+        "Anders Celsius",
+        "Carl von Linné",
+        "Jöns Jacob Berzelius",
+        "Olof Rudbeck"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är Sveriges till invånarantal minsta landskap?",
+      "choices": [
+        "Gotland",
+        "Öland",
+        "Blekinge",
+        "Halland"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken svensk film­regissör gjorde 'Det sjunde inseglet'?",
+      "choices": [
+        "Bo Widerberg",
+        "Ingmar Bergman",
+        "Roy Andersson",
+        "Lasse Hallström"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Kalmarunionen förenade Danmark, Norge och Sverige.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Sverige har infört euron som valuta.",
+      "correct": 1
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "fysik",
+  "title": "Fysik",
+  "description": "Mekanik, energi och kvantvärld.",
+  "questions": [
+    {
+      "text": "Vilken storhet mäts i enheten pascal?",
+      "choices": [
+        "Kraft",
+        "Tryck",
+        "Energi",
+        "Effekt"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad säger Newtons andra lag?",
+      "choices": [
+        "Kraft = massa × acceleration",
+        "Energi bevaras",
+        "Aktion = reaktion",
+        "Allt faller lika fort"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken partikel har negativ laddning?",
+      "choices": [
+        "Proton",
+        "Neutron",
+        "Elektron",
+        "Foton"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad kallas den minsta energimängden av ljus?",
+      "choices": [
+        "Kvant",
+        "Foton",
+        "Elektron",
+        "Neutrino"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Ungefär hur snabbt rör sig ljuset i vakuum?",
+      "choices": [
+        "300 000 km/h",
+        "30 000 km/s",
+        "300 000 km/s",
+        "3 000 km/s"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken term beskriver oordningen i ett system enligt termodynamiken?",
+      "choices": [
+        "Entalpi",
+        "Entropi",
+        "Effekt",
+        "Impuls"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad mäts i enheten hertz?",
+      "choices": [
+        "Frekvens",
+        "Effekt",
+        "Spänning",
+        "Kraft"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken fysiker är känd för osäkerhetsprincipen?",
+      "choices": [
+        "Schrödinger",
+        "Heisenberg",
+        "Planck",
+        "Dirac"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas energin ett föremål har på grund av sitt läge?",
+      "choices": [
+        "Rörelseenergi",
+        "Lägesenergi",
+        "Värmeenergi",
+        "Strålningsenergi"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken kraft håller ihop en atomkärna?",
+      "choices": [
+        "Gravitation",
+        "Elektromagnetism",
+        "Starka kärnkraften",
+        "Friktion"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad händer med en svängnings frekvens om våglängden ökar (vid samma hastighet)?",
+      "choices": [
+        "Den ökar",
+        "Den minskar",
+        "Den är oförändrad",
+        "Den fördubblas"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken enhet används för elektrisk resistans?",
+      "choices": [
+        "Volt",
+        "Ampere",
+        "Ohm",
+        "Watt"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad kallas fenomenet när ljus böjs när det passerar mellan två medier?",
+      "choices": [
+        "Reflektion",
+        "Refraktion",
+        "Diffraktion",
+        "Polarisation"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Energi kan varken skapas eller förstöras, bara omvandlas.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "En proton är lättare än en elektron.",
+      "correct": 1
+    }
+  ]
+}

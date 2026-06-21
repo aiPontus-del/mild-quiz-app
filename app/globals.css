@@ -1,0 +1,20 @@
+:root{
+  --bg:#E9E7E0; --ink:#161616; --header:#101010;
+  --accent:#00BFA5; --accent-bright:#00FFD1; --accent-dim:#00A58F;
+  --coral:#EF5350; --blue:#3FA4F5; --amber:#FFAE38; --green:#00BFA5; --purple:#7E57C2;
+  --card:#ffffff; --soft:#F4F3EF; --mut:#8A887F;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter','Euclid Circular A',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+button{font-family:inherit}
+input{font-family:inherit}
+.qz-in input::placeholder{color:rgba(0,0,0,.32)}
+[data-reduce="true"] *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+@keyframes qzPop{0%{transform:scale(.4) translateY(12px);opacity:0}60%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+@keyframes qzDot{0%{box-shadow:0 0 0 0 rgba(239,83,80,.55)}70%{box-shadow:0 0 0 8px rgba(239,83,80,0)}100%{box-shadow:0 0 0 0 rgba(239,83,80,0)}}
+@keyframes qzRise{0%{transform:translateY(40px);opacity:0}100%{transform:translateY(0);opacity:1}}
+@keyframes qzConfetti{0%{transform:translateY(-10%) rotate(0)}100%{transform:translateY(900%) rotate(700deg)}}
+@keyframes qzBar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes qzBlink{0%,100%{opacity:.25}50%{opacity:1}}

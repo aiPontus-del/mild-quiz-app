@@ -1,0 +1,147 @@
+{
+  "id": "mat",
+  "title": "Mat & dryck",
+  "description": "Gastronomi från hela världen.",
+  "questions": [
+    {
+      "text": "Vilket land anses risotto komma ifrån?",
+      "choices": [
+        "Spanien",
+        "Italien",
+        "Grekland",
+        "Frankrike"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken krydda är världens dyraste per vikt?",
+      "choices": [
+        "Vanilj",
+        "Saffran",
+        "Kardemumma",
+        "Trumpetsvamp"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter den japanska rätten med rå fisk på riskuddar?",
+      "choices": [
+        "Sashimi",
+        "Nigiri",
+        "Ramen",
+        "Tempura"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Från vilken böna görs choklad?",
+      "choices": [
+        "Soja",
+        "Kakao",
+        "Kaffe",
+        "Vanilj"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken ost är traditionellt smulig, blå och från England?",
+      "choices": [
+        "Brie",
+        "Stilton",
+        "Gouda",
+        "Feta"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land är ursprunget till rätten paella?",
+      "choices": [
+        "Italien",
+        "Portugal",
+        "Spanien",
+        "Mexiko"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad kallas processen då druvsocker blir alkohol?",
+      "choices": [
+        "Destillation",
+        "Jäsning",
+        "Pastörisering",
+        "Maceration"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken nöt används traditionellt i pesto alla genovese?",
+      "choices": [
+        "Valnöt",
+        "Pinjenöt",
+        "Hasselnöt",
+        "Mandel"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land dricker mest kaffe per capita (historiskt topp)?",
+      "choices": [
+        "Italien",
+        "Finland",
+        "USA",
+        "Brasilien"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad är 'umami'?",
+      "choices": [
+        "En matlagningsteknik",
+        "En grundsmak",
+        "En japansk kniv",
+        "En sås"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken dryck framställs genom att destillera vin?",
+      "choices": [
+        "Whisky",
+        "Konjak",
+        "Rom",
+        "Tequila"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land kommer sushi-tekniken ursprungligen ifrån?",
+      "choices": [
+        "Kina",
+        "Japan",
+        "Korea",
+        "Thailand"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken syra ger citroner deras sura smak?",
+      "choices": [
+        "Ättiksyra",
+        "Citronsyra",
+        "Mjölksyra",
+        "Oxalsyra"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Tomat är botaniskt sett en frukt.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Vit choklad innehåller kakaomassa.",
+      "correct": 1
+    }
+  ]
+}

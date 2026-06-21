@@ -1,0 +1,147 @@
+{
+  "id": "datorer",
+  "title": "Datorer & internet",
+  "description": "Från bitar till webben.",
+  "questions": [
+    {
+      "text": "Vad står 'CPU' för?",
+      "choices": [
+        "Central Processing Unit",
+        "Computer Power Unit",
+        "Central Print Unit",
+        "Core Processing Utility"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Hur många bitar är en byte?",
+      "choices": [
+        "4",
+        "8",
+        "16",
+        "32"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket talsystem (bas) använder datorer internt?",
+      "choices": [
+        "Decimalt",
+        "Binärt",
+        "Hexadecimalt",
+        "Oktalt"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas skadlig programvara som krypterar filer och kräver lösen?",
+      "choices": [
+        "Spyware",
+        "Ransomware",
+        "Adware",
+        "Firewall"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket företag grundades av Bill Gates och Paul Allen?",
+      "choices": [
+        "Apple",
+        "Microsoft",
+        "IBM",
+        "Oracle"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad står 'URL' för?",
+      "choices": [
+        "Uniform Resource Locator",
+        "Universal Reading Link",
+        "User Routing Layer",
+        "Unified Reference List"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilket programmeringsspråk är känt för webbsidors interaktivitet i webbläsaren?",
+      "choices": [
+        "Python",
+        "JavaScript",
+        "C++",
+        "SQL"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas den fysiska eller logiska adressen för en enhet på internet?",
+      "choices": [
+        "DNS",
+        "IP-adress",
+        "HTML",
+        "Cookie"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skapade Linux-kärnan?",
+      "choices": [
+        "Richard Stallman",
+        "Linus Torvalds",
+        "Dennis Ritchie",
+        "Ken Thompson"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad gör en kompilator?",
+      "choices": [
+        "Lagrar data",
+        "Översätter kod till maskinkod",
+        "Skickar e-post",
+        "Renderar bilder"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket protokoll används för säker webbtrafik (hänglås)?",
+      "choices": [
+        "FTP",
+        "HTTPS",
+        "SMTP",
+        "Telnet"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en minnesenhet på cirka 1000 megabyte?",
+      "choices": [
+        "Kilobyte",
+        "Gigabyte",
+        "Terabyte",
+        "Petabyte"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas algoritmen som löser problem genom att lära sig av exempeldata?",
+      "choices": [
+        "Kryptering",
+        "Maskininlärning",
+        "Komprimering",
+        "Virtualisering"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Open source betyder att källkoden är öppet tillgänglig.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "En megabyte är större än en gigabyte.",
+      "correct": 1
+    }
+  ]
+}

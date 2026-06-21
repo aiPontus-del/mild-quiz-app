@@ -1,0 +1,147 @@
+{
+  "id": "antiken",
+  "title": "Antiken",
+  "description": "Greker, romare och faraoner.",
+  "questions": [
+    {
+      "text": "Vilken grekisk filosof var lärare åt Alexander den store?",
+      "choices": [
+        "Sokrates",
+        "Platon",
+        "Aristoteles",
+        "Pythagoras"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken stad besegrade Rom i de puniska krigen?",
+      "choices": [
+        "Aten",
+        "Karthago",
+        "Sparta",
+        "Alexandria"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem var Egyptens sista farao (drottning)?",
+      "choices": [
+        "Nefertiti",
+        "Hatshepsut",
+        "Kleopatra VII",
+        "Nefertari"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilket slag 480 f.Kr. blev känt för 300 spartaner?",
+      "choices": [
+        "Marathon",
+        "Thermopyle",
+        "Salamis",
+        "Plataiai"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem grundade enligt myten staden Rom?",
+      "choices": [
+        "Aeneas",
+        "Romulus",
+        "Numa",
+        "Brutus"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken grekisk stadsstat var känd för sin militära disciplin?",
+      "choices": [
+        "Aten",
+        "Korint",
+        "Sparta",
+        "Thebe"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vem korsade Alperna med elefanter för att anfalla Rom?",
+      "choices": [
+        "Scipio",
+        "Hannibal",
+        "Pyrrhos",
+        "Spartacus"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket var det grekiska namnet på gudarnas hem?",
+      "choices": [
+        "Olympen",
+        "Parnassos",
+        "Delfi",
+        "Akropolis"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken romersk ledare mördades på Idus martiae (15 mars) 44 f.Kr.?",
+      "choices": [
+        "Augustus",
+        "Julius Caesar",
+        "Pompejus",
+        "Nero"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket folk byggde akvedukter och vägar genom hela sitt rike?",
+      "choices": [
+        "Grekerna",
+        "Romarna",
+        "Perserna",
+        "Fenicierna"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken filosof dömdes till döden i Aten och drack odört?",
+      "choices": [
+        "Platon",
+        "Sokrates",
+        "Diogenes",
+        "Epikuros"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallades de offentliga romerska bad- och nöjesarenorna för gladiatorspel?",
+      "choices": [
+        "Forum",
+        "Colosseum/amfiteater",
+        "Akropolis",
+        "Agora"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket vetenskapligt under låg i Alexandria?",
+      "choices": [
+        "Hängande trädgårdarna",
+        "Biblioteket",
+        "Kolossen",
+        "Mausoleet"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Demokratin uppstod i antikens Aten.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Pyramiderna i Giza byggdes av romarna.",
+      "correct": 1
+    }
+  ]
+}

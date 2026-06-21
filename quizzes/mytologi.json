@@ -1,0 +1,147 @@
+{
+  "id": "mytologi",
+  "title": "Mytologi",
+  "description": "Gudar och sagor från olika kulturer.",
+  "questions": [
+    {
+      "text": "Vem är åskans gud i nordisk mytologi?",
+      "choices": [
+        "Oden",
+        "Tor",
+        "Loke",
+        "Frej"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem är gudarnas kung i grekisk mytologi?",
+      "choices": [
+        "Poseidon",
+        "Zeus",
+        "Hades",
+        "Apollon"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter Odens åttafotade häst?",
+      "choices": [
+        "Fenrir",
+        "Sleipner",
+        "Grane",
+        "Pegasus"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem är krigets gud i romersk mytologi?",
+      "choices": [
+        "Mars",
+        "Jupiter",
+        "Merkurius",
+        "Neptunus"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilket väsen vaktar Hel-vägen i nordisk myt och är Lokes barn?",
+      "choices": [
+        "Jörmungandr",
+        "Fenrir",
+        "Sleipner",
+        "Nidhögg"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem är kärlekens gudinna i grekisk mytologi?",
+      "choices": [
+        "Hera",
+        "Afrodite",
+        "Artemis",
+        "Athena"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter trädet som binder samman världarna i nordisk myt?",
+      "choices": [
+        "Mimameid",
+        "Yggdrasil",
+        "Glasir",
+        "Läråd"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken egyptisk gud avbildas ofta med schakalhuvud?",
+      "choices": [
+        "Ra",
+        "Anubis",
+        "Horus",
+        "Set"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem är vishetens gudinna i grekisk mytologi?",
+      "choices": [
+        "Hestia",
+        "Athena",
+        "Demeter",
+        "Persefone"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter Tors hammare?",
+      "choices": [
+        "Gungner",
+        "Mjölner",
+        "Draupner",
+        "Gram"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem är underjordens gud i grekisk mytologi?",
+      "choices": [
+        "Hades",
+        "Hermes",
+        "Hefaistos",
+        "Ares"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken hjälte utförde tolv stordåd i grekisk myt?",
+      "choices": [
+        "Theseus",
+        "Herakles (Herkules)",
+        "Perseus",
+        "Jason"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas de kvinnliga väsen som väljer vilka som ska dö i strid (nordisk myt)?",
+      "choices": [
+        "Nornor",
+        "Valkyrior",
+        "Diser",
+        "Jättinnor"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Ragnarök betecknar gudarnas undergång i nordisk mytologi.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Zeus är en gud i egyptisk mytologi.",
+      "correct": 1
+    }
+  ]
+}

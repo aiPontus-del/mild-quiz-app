@@ -1,0 +1,147 @@
+{
+  "id": "geografi",
+  "title": "Geografi",
+  "description": "Världens geografi – för dig som rest.",
+  "questions": [
+    {
+      "text": "Vilken är världens största insjö till ytan?",
+      "choices": [
+        "Övre sjön",
+        "Victoriasjön",
+        "Kaspiska havet",
+        "Bajkalsjön"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken är världens näst högsta bergstopp?",
+      "choices": [
+        "Kangchenjunga",
+        "K2",
+        "Lhotse",
+        "Makalu"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket sund skiljer Europa från Afrika vid dess smalaste punkt?",
+      "choices": [
+        "Bosporen",
+        "Gibraltar sund",
+        "Öresund",
+        "Engelska kanalen"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken är världens djupaste sjö?",
+      "choices": [
+        "Tanganyikasjön",
+        "Bajkalsjön",
+        "Titicacasjön",
+        "Kaspiska havet"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land omsluter helt kungariket Lesotho?",
+      "choices": [
+        "Namibia",
+        "Botswana",
+        "Sydafrika",
+        "Zimbabwe"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken är jordens torraste öken?",
+      "choices": [
+        "Sahara",
+        "Gobi",
+        "Atacama",
+        "Namib"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilket land har tre officiella huvudstäder?",
+      "choices": [
+        "Bolivia",
+        "Sydafrika",
+        "Sri Lanka",
+        "Malaysia"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken bergskedja räknas som gräns mellan Europa och Asien?",
+      "choices": [
+        "Kaukasus",
+        "Alperna",
+        "Uralbergen",
+        "Karpaterna"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken halvö delar Spanien och Portugal på?",
+      "choices": [
+        "Balkanhalvön",
+        "Iberiska halvön",
+        "Apenninska halvön",
+        "Jylland"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många tidszoner sträcker sig Ryssland över?",
+      "choices": [
+        "9",
+        "11",
+        "13",
+        "7"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är Afrikas folkrikaste land?",
+      "choices": [
+        "Egypten",
+        "Etiopien",
+        "Nigeria",
+        "Kongo-Kinshasa"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken flod rinner genom flest länder?",
+      "choices": [
+        "Nilen",
+        "Donau",
+        "Amazonas",
+        "Mekong"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land gränsar till flest andra länder i Sydamerika?",
+      "choices": [
+        "Argentina",
+        "Brasilien",
+        "Peru",
+        "Colombia"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Istanbul ligger på två kontinenter.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Mount Everest är världens näst högsta berg.",
+      "correct": 1
+    }
+  ]
+}

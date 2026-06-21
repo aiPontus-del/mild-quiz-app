@@ -1,0 +1,147 @@
+{
+  "id": "ekologi",
+  "title": "Ekologi & miljö",
+  "description": "Klimat, kretslopp och natur.",
+  "questions": [
+    {
+      "text": "Vilken gas bidrar mest till den av människan förstärkta växthuseffekten?",
+      "choices": [
+        "Metan",
+        "Koldioxid",
+        "Lustgas",
+        "Ozon"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas lagret i atmosfären som skyddar mot UV-strålning?",
+      "choices": [
+        "Troposfären",
+        "Ozonlagret",
+        "Jonosfären",
+        "Magnetosfären"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en art som är på väg att försvinna helt?",
+      "choices": [
+        "Invasiv",
+        "Utrotningshotad",
+        "Endemisk",
+        "Pionjärart"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är världens största sammanhängande regnskogsområde?",
+      "choices": [
+        "Kongobassängen",
+        "Amazonas",
+        "Borneo",
+        "Daintree"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas processen där sjöar växer igen av näringsöverskott?",
+      "choices": [
+        "Försurning",
+        "Övergödning (eutrofiering)",
+        "Erosion",
+        "Sedimentation"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket fenomen orsakas av periodisk uppvärmning av Stilla havet?",
+      "choices": [
+        "Monsun",
+        "El Niño",
+        "Golfströmmen",
+        "Passadvind"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en art som introducerats och sprider sig på bekostnad av andra?",
+      "choices": [
+        "Endemisk",
+        "Invasiv",
+        "Nyckelart",
+        "Indikatorart"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Ungefär hur stor andel av jordens yta täcks av hav?",
+      "choices": [
+        "50 %",
+        "60 %",
+        "71 %",
+        "85 %"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad kallas de fossila bränslena gemensamt med kol, olja och …?",
+      "choices": [
+        "Torv",
+        "Naturgas",
+        "Vätgas",
+        "Etanol"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken havsström värmer upp Nordeuropas klimat?",
+      "choices": [
+        "Humboldtströmmen",
+        "Golfströmmen",
+        "Kuroshio",
+        "Benguela"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas nedbrytare som svampar och bakterier i ett ekosystem?",
+      "choices": [
+        "Producenter",
+        "Konsumenter",
+        "Destruenter",
+        "Predatorer"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilket ämne orsakade förtunning av ozonlagret och förbjöds?",
+      "choices": [
+        "Koldioxid",
+        "Freoner (CFC)",
+        "Metan",
+        "Svaveldioxid"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas mångfalden av arter i ett område?",
+      "choices": [
+        "Biomassa",
+        "Biodiversitet",
+        "Biotop",
+        "Biosfär"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Korallrev är känsliga för stigande havstemperaturer.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Metan är en svagare växthusgas än koldioxid per molekyl.",
+      "correct": 1
+    }
+  ]
+}

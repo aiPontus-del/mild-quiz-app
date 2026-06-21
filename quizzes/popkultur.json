@@ -1,0 +1,11 @@
+{
+  "id": "popkultur",
+  "title": "Popkultur",
+  "description": "Film, musik och internet.",
+  "questions": [
+    { "text": "Vilken artist släppte albumet '1989'?", "choices": ["Adele", "Taylor Swift", "Beyoncé", "Lorde"], "correct": 1, "timeLimit": 20 },
+    { "text": "I vilken stad utspelar sig Friends?", "choices": ["Los Angeles", "Chicago", "New York", "Boston"], "correct": 2, "timeLimit": 20 },
+    { "text": "Vad heter den gröna figuren i Shrek?", "choices": ["Donkey", "Shrek", "Fiona", "Puss"], "correct": 1, "timeLimit": 15 },
+    { "text": "Vilket företag äger Instagram?", "choices": ["Google", "Meta", "X", "ByteDance"], "correct": 1, "timeLimit": 15 }
+  ]
+}

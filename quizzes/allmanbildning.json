@@ -1,0 +1,147 @@
+{
+  "id": "allmanbildning",
+  "title": "Allmänbildning",
+  "description": "Blandade kluriga frågor.",
+  "questions": [
+    {
+      "text": "Hur många hjärtan har en bläckfisk?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilket grundämne har den kemiska beteckningen 'Pb'?",
+      "choices": [
+        "Platina",
+        "Bly",
+        "Polonium",
+        "Palladium"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken är den enda kroppsdel som inte kan reparera sig själv (saknar blodtillförsel)?",
+      "choices": [
+        "Naglarna",
+        "Tandemaljen",
+        "Håret",
+        "Brosket"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många strängar har en violin?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket land har flest officiella tidszoner inklusive territorier?",
+      "choices": [
+        "Ryssland",
+        "Frankrike",
+        "USA",
+        "Kina"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas rädsla för slutna utrymmen?",
+      "choices": [
+        "Agorafobi",
+        "Klaustrofobi",
+        "Akrofobi",
+        "Araknofobi"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken planet är minst i vårt solsystem?",
+      "choices": [
+        "Mars",
+        "Merkurius",
+        "Venus",
+        "Pluto"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är det vanligaste efternamnet i världen?",
+      "choices": [
+        "Smith",
+        "Wang/Wong",
+        "Garcia",
+        "Müller"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en sjuhörning (geometrisk figur)?",
+      "choices": [
+        "Hexagon",
+        "Heptagon",
+        "Oktagon",
+        "Pentagon"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket språk har flest ord i sin ordbok (ungefärligt)?",
+      "choices": [
+        "Engelska",
+        "Mandarin",
+        "Spanska",
+        "Arabiska"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilket organ i kroppen kan växa tillbaka efter att en stor del avlägsnats?",
+      "choices": [
+        "Hjärtat",
+        "Levern",
+        "Lungan",
+        "Hjärnan"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många nollor har en miljard (kort skala, 10⁹)?",
+      "choices": [
+        "6",
+        "9",
+        "12",
+        "15"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken metall är flytande vid rumstemperatur?",
+      "choices": [
+        "Bly",
+        "Kvicksilver",
+        "Tenn",
+        "Zink"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Honung kan i praktiken hålla sig ätbar i tusentals år.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Blod är blått inuti kroppen innan det möter syre.",
+      "correct": 1
+    }
+  ]
+}

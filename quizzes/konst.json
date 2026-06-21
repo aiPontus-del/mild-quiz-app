@@ -1,0 +1,147 @@
+{
+  "id": "konst",
+  "title": "Konst",
+  "description": "Konstnärer, stilar och verk.",
+  "questions": [
+    {
+      "text": "Vem målade takfresken i Sixtinska kapellet?",
+      "choices": [
+        "Rafael",
+        "Michelangelo",
+        "Botticelli",
+        "Caravaggio"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken konströrelse förknippas med Salvador Dalí?",
+      "choices": [
+        "Kubism",
+        "Surrealism",
+        "Impressionism",
+        "Expressionism"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skar av sig en del av sitt öra?",
+      "choices": [
+        "Gauguin",
+        "Van Gogh",
+        "Monet",
+        "Cézanne"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken konstnär grundade i hög grad kubismen tillsammans med Braque?",
+      "choices": [
+        "Matisse",
+        "Picasso",
+        "Klee",
+        "Kandinsky"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "I vilket museum hänger Mona Lisa?",
+      "choices": [
+        "Prado",
+        "Louvren",
+        "Uffizierna",
+        "Rijksmuseum"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem målade 'Skriet'?",
+      "choices": [
+        "Munch",
+        "Klimt",
+        "Schiele",
+        "Hodler"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken stil kännetecknas av ljus, korta penseldrag och Monet?",
+      "choices": [
+        "Barock",
+        "Impressionism",
+        "Renässans",
+        "Romantik"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken nederländsk 1600-talsmästare målade 'Nattvakten'?",
+      "choices": [
+        "Vermeer",
+        "Rembrandt",
+        "Hals",
+        "Rubens"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem skapade skulpturen 'Tänkaren'?",
+      "choices": [
+        "Rodin",
+        "Bernini",
+        "Michelangelo",
+        "Brâncuși"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilken konstnär är känd för Campbell's soppburkar och pop-art?",
+      "choices": [
+        "Lichtenstein",
+        "Warhol",
+        "Pollock",
+        "Rothko"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken svensk konstnär målade 'Midvinterblot'?",
+      "choices": [
+        "Anders Zorn",
+        "Carl Larsson",
+        "Bruno Liljefors",
+        "Ernst Josephson"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket konstnärligt begrepp betyder ljus-och-mörker-kontrast?",
+      "choices": [
+        "Sfumato",
+        "Chiaroscuro",
+        "Pentimento",
+        "Impasto"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem målade 'Guernica' som protest mot kriget?",
+      "choices": [
+        "Dalí",
+        "Picasso",
+        "Miró",
+        "Goya"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Vermeers 'Flicka med pärlörhänge' är ett nederländskt verk.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Impressionismen uppstod på 1300-talet.",
+      "correct": 1
+    }
+  ]
+}

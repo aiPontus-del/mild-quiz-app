@@ -1,0 +1,147 @@
+{
+  "id": "vetenskap",
+  "title": "Vetenskap",
+  "description": "Bredd från cell till kosmos.",
+  "questions": [
+    {
+      "text": "Vilket är det vanligaste grundämnet i universum?",
+      "choices": [
+        "Syre",
+        "Kol",
+        "Väte",
+        "Helium"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vad kallas processen där en cell delar sig i två identiska celler?",
+      "choices": [
+        "Meios",
+        "Mitos",
+        "Osmos",
+        "Diffusion"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken vetenskapsman formulerade evolutionsteorin genom naturligt urval?",
+      "choices": [
+        "Mendel",
+        "Darwin",
+        "Lamarck",
+        "Linné"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad mäter Richterskalan (numera momentmagnitudskalan)?",
+      "choices": [
+        "Vindstyrka",
+        "Jordbävningars styrka",
+        "Surhet",
+        "Ljudnivå"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många kromosompar har en normal mänsklig cell?",
+      "choices": [
+        "21",
+        "23",
+        "46",
+        "48"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket är det hårdaste naturligt förekommande materialet?",
+      "choices": [
+        "Kvarts",
+        "Diamant",
+        "Korund",
+        "Topas"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas symbiosen där båda arter gynnas?",
+      "choices": [
+        "Parasitism",
+        "Mutualism",
+        "Kommensalism",
+        "Predation"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken del av cellen kallas 'kraftverket' och producerar energi?",
+      "choices": [
+        "Cellkärnan",
+        "Mitokondrien",
+        "Ribosomen",
+        "Golgiapparaten"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad heter den lättaste ädelgasen?",
+      "choices": [
+        "Neon",
+        "Argon",
+        "Helium",
+        "Krypton"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilken kraft beskrivs av Einsteins allmänna relativitetsteori?",
+      "choices": [
+        "Elektromagnetism",
+        "Gravitation",
+        "Stark kärnkraft",
+        "Svag kärnkraft"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas djur som håller konstant kroppstemperatur?",
+      "choices": [
+        "Växelvarma",
+        "Jämnvarma",
+        "Kallblodiga",
+        "Amfibiska"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket grundämne har atomnummer 1?",
+      "choices": [
+        "Helium",
+        "Väte",
+        "Kol",
+        "Syre"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vem upptäckte penicillinet?",
+      "choices": [
+        "Louis Pasteur",
+        "Alexander Fleming",
+        "Robert Koch",
+        "Jonas Salk"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "DNA har en dubbelspiralstruktur.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Ljus rör sig långsammare än ljud i luft.",
+      "correct": 1
+    }
+  ]
+}

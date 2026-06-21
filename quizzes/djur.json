@@ -1,0 +1,147 @@
+{
+  "id": "djur",
+  "title": "Djurriket",
+  "description": "Zoologi bortom det självklara.",
+  "questions": [
+    {
+      "text": "Vilket är världens giftigaste djur (för människa, per mängd gift)?",
+      "choices": [
+        "Kobra",
+        "Sjögetingen (kubmanet)",
+        "Svart änka",
+        "Stenfisk"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken fågel kan flyga baklänges?",
+      "choices": [
+        "Svala",
+        "Kolibri",
+        "Tärna",
+        "Falk"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Hur många hjärtan har en bläckfisk?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "Vilket däggdjur lägger ägg?",
+      "choices": [
+        "Myrkott",
+        "Näbbdjur",
+        "Pungråtta",
+        "Lemur"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas en grupp kråkor på engelska/biologiskt (svenskt: ofta 'flock')?",
+      "choices": [
+        "Pod",
+        "Murder",
+        "Pride",
+        "School"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket landdjur har det längsta livet (kan bli över 150 år)?",
+      "choices": [
+        "Elefant",
+        "Jättesköldpadda",
+        "Noshörning",
+        "Flodhäst"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket djur har det starkaste bettet i förhållande till storlek?",
+      "choices": [
+        "Krokodil",
+        "Myrslok",
+        "Pirål",
+        "Bitande myra"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Vilket är det enda däggdjuret med äkta flygförmåga?",
+      "choices": [
+        "Flygekorre",
+        "Fladdermus",
+        "Flygande lemur",
+        "Sockerek­orre"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas studiet av insekter?",
+      "choices": [
+        "Ornitologi",
+        "Entomologi",
+        "Herpetologi",
+        "Iktyologi"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket djur är känt för att kunna regenerera förlorade kroppsdelar som ben?",
+      "choices": [
+        "Groda",
+        "Axolotl",
+        "Padda",
+        "Salamander­fisk"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilken val är jordens största djur någonsin?",
+      "choices": [
+        "Späckhuggare",
+        "Blåval",
+        "Knölval",
+        "Kaskelot"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vad kallas djur som är aktiva i skymning och gryning?",
+      "choices": [
+        "Nokturna",
+        "Crepuskulära",
+        "Diurna",
+        "Hibernerande"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Vilket djur producerar siden som används till tyg?",
+      "choices": [
+        "Spindel",
+        "Silkesfjärilens larv",
+        "Bi",
+        "Mal"
+      ],
+      "correct": 1
+    },
+    {
+      "type": "truefalse",
+      "text": "Bläckfiskar har blått blod på grund av kopparbaserat hemocyanin.",
+      "correct": 0
+    },
+    {
+      "type": "truefalse",
+      "text": "Alla ormar är giftiga.",
+      "correct": 1
+    }
+  ]
+}
