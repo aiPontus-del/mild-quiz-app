@@ -128,7 +128,7 @@ export function HostPreview({ question, qIndex, total }) {
   );
 }
 
-export function HostQuestion({ qIndex, total, question, timeLeft, timeLimit, answeredCount, playerCount, onReveal, onPause, onUnpause, onSkip, onEnd, paused }) {
+export function HostQuestion({ qIndex, total, question, timeLeft, timeLimit, answeredCount, playerCount, paused }) {
   const circ = 2 * Math.PI * 51;
   const offset = circ * (1 - timeLeft / timeLimit);
   return (
@@ -162,12 +162,6 @@ export function HostQuestion({ qIndex, total, question, timeLeft, timeLimit, ans
           {question.choices.map((c, i) => <OptionTile key={i} i={i} text={c} type={question.type} />)}
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 18, flexWrap: 'wrap' }}>
-          <button onClick={paused ? onUnpause : onPause} style={ctrlBtn}>{paused ? '▶ Återuppta' : '⏸ Pausa'}</button>
-          <button onClick={onSkip} style={ctrlBtn}>⏭ Hoppa över</button>
-          <button onClick={onEnd} style={{ ...ctrlBtn, color: '#C62828', borderColor: 'rgba(198,40,40,.3)' }}>⏹ Avsluta spelet</button>
-          <button onClick={onReveal} style={{ ...ctrlBtn, marginLeft: 'auto', background: '#161616', color: '#fff', border: 'none' }}>Visa svar →</button>
-        </div>
       </div>
     </Card>
   );

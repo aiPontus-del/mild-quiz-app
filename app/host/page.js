@@ -5,6 +5,31 @@ import { getSocket } from '@/lib/socketClient';
 import { Sound } from '@/lib/sound';
 import { HostLobby, HostCountdown, HostPreview, HostQuestion, HostResults, HostWinner } from '@/components/Host';
 
+const iconBtn = { border: '1px solid rgba(0,0,0,.12)', background: '#fff', borderRadius: 999, width: 42, height: 42, fontSize: 18, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' };
+
+function ControlsMenu({ paused, onPause, onUnpause, onSkip, onReveal, onEnd }) {
+  const [open, setOpen] = useState(false);
+  const item = { display: 'flex', alignItems: 'center', gap: 8, width: '100%', textAlign: 'left', border: 'none', background: 'transparent', padding: '10px 12px', fontSize: 14, fontWeight: 600, cursor: 'pointer', borderRadius: 9, fontFamily: 'inherit', color: '#161616' };
+  const act = (fn) => { setOpen(false); fn(); };
+  return (
+    <div style={{ position: 'relative' }}>
+      <button onClick={() => setOpen((o) => !o)} aria-label="Värdkontroller" title="Värdkontroller" style={{ ...iconBtn, background: open ? '#161616' : '#fff', color: open ? '#fff' : '#161616' }}>⋯</button>
+      {open && (
+        <>
+          <div onClick={() => setOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 25 }} />
+          <div style={{ position: 'absolute', right: 0, top: 50, zIndex: 26, background: '#fff', borderRadius: 14, boxShadow: '0 18px 50px -20px rgba(0,0,0,.45)', border: '1px solid rgba(0,0,0,.08)', padding: 6, minWidth: 210 }}>
+            <button style={item} onClick={() => act(paused ? onUnpause : onPause)}>{paused ? '▶ Återuppta' : '⏸ Pausa'}</button>
+            <button style={item} onClick={() => act(onReveal)}>➡ Visa svar</button>
+            <button style={item} onClick={() => act(onSkip)}>⏭ Hoppa över</button>
+            <div style={{ height: 1, background: 'rgba(0,0,0,.08)', margin: '4px 6px' }} />
+            <button style={{ ...item, color: '#C62828' }} onClick={() => act(onEnd)}>⏹ Avsluta spelet</button>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 export default function HostPage() {
   const [pin, setPin] = useState('······');
   const [qr, setQr] = useState(null);
@@ -98,16 +123,19 @@ export default function HostPage() {
   const toggleFs = () => { if (typeof document === 'undefined') return; if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen().catch(() => {}); };
 
   const resultsQuestion = { text: q.text, type: results.type, choices: results.choices.length ? results.choices : q.choices, correct: results.correct, double: results.double };
-  const cornerBtn = { position: 'fixed', top: 16, zIndex: 20, border: '1px solid rgba(0,0,0,.12)', background: '#fff', borderRadius: 999, width: 42, height: 42, fontSize: 18, cursor: 'pointer' };
+  const inGame = phase === 'question' || phase === 'preview' || phase === 'countdown';
 
   return (
     <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 36, position: 'relative' }}>
-      <button onClick={toggleFs} aria-label="Helskärm" style={{ ...cornerBtn, right: 66 }}>{isFs ? '🡼' : '⛶'}</button>
-      <button onClick={toggleMute} aria-label="Ljud på/av" style={{ ...cornerBtn, right: 16 }}>{muted ? '🔇' : '🔊'}</button>
+      <div style={{ position: 'fixed', top: 16, right: 16, zIndex: 20, display: 'flex', gap: 8 }}>
+        {inGame && <ControlsMenu paused={paused} onPause={pause} onUnpause={unpause} onSkip={skip} onReveal={reveal} onEnd={endGame} />}
+        <button onClick={toggleFs} aria-label="Helskärm" title="Helskärm" style={iconBtn}>{isFs ? '🡼' : '⛶'}</button>
+        <button onClick={toggleMute} aria-label="Ljud på/av" title="Ljud på/av" style={iconBtn}>{muted ? '🔇' : '🔊'}</button>
+      </div>
       {phase === 'lobby' && <HostLobby pin={pin} joinUrl={joinUrl} qr={qr} players={players} quiz={quiz} quizzes={quizzes} onPickQuiz={pickQuiz} onStart={start} />}
       {phase === 'countdown' && <HostCountdown n={count} />}
       {phase === 'preview' && <HostPreview question={q} qIndex={q.qIndex} total={q.total} />}
-      {phase === 'question' && <HostQuestion qIndex={q.qIndex} total={q.total} question={q} timeLeft={timeLeft} timeLimit={q.timeLimit} answeredCount={answered.count} playerCount={players.length} onReveal={reveal} onPause={pause} onUnpause={unpause} onSkip={skip} onEnd={endGame} paused={paused} />}
+      {phase === 'question' && <HostQuestion qIndex={q.qIndex} total={q.total} question={q} timeLeft={timeLeft} timeLimit={q.timeLimit} answeredCount={answered.count} playerCount={players.length} paused={paused} />}
       {phase === 'results' && <HostResults question={resultsQuestion} distribution={results.distribution} leaderboard={results.leaderboard.slice(0, 5)} onNext={next} isLast={results.isLast} />}
       {phase === 'winner' && <HostWinner podium={podium} onRestart={restart} onNewGame={resetGame} />}
     </main>
