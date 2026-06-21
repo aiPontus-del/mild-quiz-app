@@ -57,8 +57,19 @@ app.prepare().then(async () => {
   function questionPublic(q, qIndex, total, extra) {
     return Object.assign({ qIndex, total, text: q.text, type: q.type, choices: q.choices, image: q.image, video: q.video, double: q.double, timeLimit: q.timeLimit }, extra || {});
   }
+  function shuffleArr(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  function shuffledQuestion(q) {
+    if (q.type === 'truefalse') return { type: q.type, text: q.text, image: q.image, video: q.video, double: q.double, timeLimit: q.timeLimit, choices: q.choices, correct: q.correct };
+    const order = shuffleArr([...Array(q.choices.length).keys()]);
+    const choices = order.map((i) => q.choices[i]);
+    let correct;
+    if (q.type === 'multi') { const set = new Set(Array.isArray(q.correct) ? q.correct : [q.correct]); correct = order.map((orig, idx) => (set.has(orig) ? idx : -1)).filter((x) => x >= 0); }
+    else { correct = order.indexOf(q.correct); }
+    return { type: q.type, text: q.text, image: q.image, video: q.video, double: q.double, timeLimit: q.timeLimit, choices, correct };
+  }
+  function currentQ(room) { return room.activeQ || room.quiz.questions[room.qIndex]; }
   function resultsSnapshot(room) {
-    const q = room.quiz.questions[room.qIndex];
+    const q = currentQ(room);
     const dist = q.choices.map(() => 0);
     for (const [id, a] of room.answers.entries()) {
       const sel = Array.isArray(a.answer) ? a.answer : [a.answer];
@@ -81,15 +92,15 @@ app.prepare().then(async () => {
   }
   function startPreview(room) {
     clearRoomTimer(room);
-    const q = room.quiz.questions[room.qIndex];
+    room.activeQ = shuffledQuestion(room.quiz.questions[room.qIndex]);
     room.phase = 'preview';
-    io.to(room.pin).emit('game:preview', questionPublic(q, room.qIndex, room.quiz.questions.length));
+    io.to(room.pin).emit('game:preview', questionPublic(room.activeQ, room.qIndex, room.quiz.questions.length));
     persist(room);
     room.previewT = setTimeout(() => startQuestion(room), PREVIEW_MS);
   }
   function startQuestion(room) {
     clearRoomTimer(room);
-    const q = room.quiz.questions[room.qIndex];
+    const q = currentQ(room);
     room.phase = 'question'; room.answers = new Map(); room.startedAt = Date.now();
     room.endsAt = room.startedAt + q.timeLimit * 1000;
     io.to(room.pin).emit('game:question', questionPublic(q, room.qIndex, room.quiz.questions.length, { endsAt: room.endsAt }));
@@ -100,7 +111,7 @@ app.prepare().then(async () => {
     clearRoomTimer(room);
     if (room.phase !== 'question') return;
     room.phase = 'results';
-    const q = room.quiz.questions[room.qIndex];
+    const q = currentQ(room);
     const limitMs = q.timeLimit * 1000;
     for (const p of room.players.values()) {
       const a = room.answers.get(p.id);
@@ -132,14 +143,14 @@ app.prepare().then(async () => {
 
   function emitCurrentToHost(socket, room) {
     socket.emit('room:players', { players: publicPlayers(room) });
-    const q = room.quiz.questions[room.qIndex];
+    const q = currentQ(room);
     if (room.phase === 'preview') socket.emit('game:preview', questionPublic(q, room.qIndex, room.quiz.questions.length));
     else if (room.phase === 'question') { socket.emit('game:question', questionPublic(q, room.qIndex, room.quiz.questions.length, { endsAt: room.endsAt })); socket.emit('game:answered', { count: room.answers.size, total: room.players.size }); }
     else if (room.phase === 'results') socket.emit('game:results', resultsSnapshot(room));
     else if (room.phase === 'winner') socket.emit('game:over', { podium: leaderboard(room).slice(0, 3) });
   }
   function emitCurrentToPlayer(socket, room, player) {
-    const q = room.quiz.questions[room.qIndex];
+    const q = currentQ(room);
     if (room.phase === 'preview') socket.emit('game:preview', questionPublic(q, room.qIndex, room.quiz.questions.length));
     else if (room.phase === 'question') { socket.emit('game:question', questionPublic(q, room.qIndex, room.quiz.questions.length, { endsAt: room.endsAt })); if (room.answers.has(player.id)) socket.emit('you:locked'); }
     else if (room.phase === 'results') { const lb = leaderboard(room); const rank = 1 + lb.filter((x) => x.score > player.score).length; socket.emit('you:result', Object.assign({ score: player.score, rank }, player.last || { correct: false, points: 0 })); }
@@ -160,7 +171,7 @@ app.prepare().then(async () => {
       const quiz = getQuiz(s.quizId);
       const players = new Map();
       (s.players || []).forEach((p) => players.set(p.id, Object.assign({}, p, { socketId: null, connected: false })));
-      const room = { pin: s.pin, quiz, hostSocketId: null, hostConnected: false, phase: s.phase, qIndex: s.qIndex || 0, players, answers: new Map(s.answers || []), startedAt: s.startedAt || 0, endsAt: s.endsAt || 0, timer: null, countdownT: null, previewT: null, hostGraceT: null };
+      const room = { pin: s.pin, quiz, hostSocketId: null, hostConnected: false, phase: s.phase, qIndex: s.qIndex || 0, players, answers: new Map(s.answers || []), startedAt: s.startedAt || 0, endsAt: s.endsAt || 0, activeQ: s.activeQ || null, timer: null, countdownT: null, previewT: null, hostGraceT: null };
       rooms.set(room.pin, room);
       scheduleHostGrace(room);
       const now = Date.now();
