@@ -5,3 +5,5 @@ out
 .env
 .env.local
 npm-debug.log*
+build.out
+build.log

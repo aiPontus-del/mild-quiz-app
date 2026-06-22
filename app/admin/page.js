@@ -87,6 +87,32 @@ export default function AdminPage() {
     const arr = Array.isArray(q.correct) ? q.correct : [];
     return { ...q, correct: arr.includes(ci) ? arr.filter((x) => x !== ci) : [...arr, ci] };
   }) }));
+  async function setImageFile(i, file) {
+    if (!file) return;
+    if (!file.type.startsWith('image/')) { setError('Filen är inte en bild'); return; }
+    const dataUrl = await new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const img = new Image();
+        img.onload = () => {
+          const MAX = 1024;
+          let { width, height } = img;
+          if (width > MAX || height > MAX) { const s = Math.min(MAX / width, MAX / height); width = Math.round(width * s); height = Math.round(height * s); }
+          const canvas = document.createElement('canvas');
+          canvas.width = width; canvas.height = height;
+          canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+          resolve(canvas.toDataURL('image/jpeg', 0.8));
+        };
+        img.onerror = () => resolve(null);
+        img.src = reader.result;
+      };
+      reader.onerror = () => resolve(null);
+      reader.readAsDataURL(file);
+    });
+    if (dataUrl) { setError(''); setQ(i, { image: dataUrl }); }
+    else setError('Kunde inte läsa bilden');
+  }
+
   const addQ = () => setEditing((e) => ({ ...e, questions: [...e.questions, blankQuestion()] }));
   const removeQ = (i) => setEditing((e) => ({ ...e, questions: e.questions.filter((_, idx) => idx !== i) }));
   const moveQ = (i, dir) => setEditing((e) => {
@@ -212,10 +238,22 @@ export default function AdminPage() {
                   </div>
                 )}
 
-                <details style={{ marginTop: 10 }}>
+                <details style={{ marginTop: 10 }} open={!!q.image || !!q.video}>
                   <summary style={{ ...label, cursor: 'pointer' }}>Bild/video (valfritt)</summary>
                   <div style={{ display: 'grid', gap: 8, marginTop: 8 }}>
-                    <input style={input} value={q.image} onChange={(e) => setQ(i, { image: e.target.value })} placeholder="Bild-URL (https://…)" />
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+                      <label style={{ ...ghost, padding: '8px 14px', fontSize: 13, cursor: 'pointer', display: 'inline-flex' }}>
+                        Ladda upp bild
+                        <input type="file" accept="image/*" style={{ display: 'none' }} onChange={(e) => { setImageFile(i, e.target.files[0]); e.target.value = ''; }} />
+                      </label>
+                      {q.image && <button style={{ ...ghost, padding: '8px 14px', fontSize: 13, color: '#C62828' }} onClick={() => setQ(i, { image: '' })}>Ta bort bild</button>}
+                      <span style={{ ...label, textTransform: 'none', letterSpacing: 0 }}>eller klistra in en direktlänk nedan</span>
+                    </div>
+                    {q.image && (
+                      <img src={q.image} alt="" style={{ maxHeight: 150, maxWidth: '100%', borderRadius: 10, objectFit: 'cover', border: '1px solid rgba(0,0,0,.1)' }}
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }} onLoad={(e) => { e.currentTarget.style.display = 'block'; }} />
+                    )}
+                    <input style={input} value={q.image && q.image.startsWith('data:') ? '' : q.image} disabled={!!(q.image && q.image.startsWith('data:'))} onChange={(e) => setQ(i, { image: e.target.value })} placeholder="Bild-URL (https://… .jpg/.png)" />
                     <input style={input} value={q.video} onChange={(e) => setQ(i, { video: e.target.value })} placeholder="Video-URL (mp4, https://…)" />
                   </div>
                 </details>

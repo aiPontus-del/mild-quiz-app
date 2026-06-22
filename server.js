@@ -164,6 +164,9 @@ app.prepare().then(async () => {
     }, HOST_GRACE_MS);
   }
 
+  // load bundled + durable (Redis) quizzes before serving
+  try { await QZ.refresh(); } catch (e) { console.error('[quizzes] initial load failed', e.message); }
+
   // ---- rehydrate from Redis on boot ----
   try {
     const saved = await store.loadAll();
@@ -188,8 +191,8 @@ app.prepare().then(async () => {
   io.on('connection', (socket) => {
     socket.data = { pin: null, role: null, playerId: null };
 
-    socket.on('host:create', ({ quizId } = {}, cb) => {
-      QZ.reload();
+    socket.on('host:create', async ({ quizId } = {}, cb) => {
+      await QZ.refresh();
       const pin = makePin(rooms);
       const room = { pin, quiz: getQuiz(quizId), hostSocketId: socket.id, hostConnected: true, phase: 'lobby', qIndex: 0, players: new Map(), answers: new Map(), startedAt: 0, endsAt: 0, timer: null, countdownT: null, previewT: null, hostGraceT: null };
       rooms.set(pin, room);
@@ -198,9 +201,10 @@ app.prepare().then(async () => {
       cb && cb({ ok: true, pin, quizzes: quizMeta(), quiz: { id: room.quiz.id, title: room.quiz.title } });
     });
 
-    socket.on('host:resume', ({ pin } = {}, cb) => {
+    socket.on('host:resume', async ({ pin } = {}, cb) => {
       const room = rooms.get(String(pin || '').trim());
       if (!room) return cb && cb({ ok: false });
+      await QZ.refresh();
       room.hostSocketId = socket.id; room.hostConnected = true;
       if (room.hostGraceT) { clearTimeout(room.hostGraceT); room.hostGraceT = null; }
       socket.join(room.pin); socket.data.pin = room.pin; socket.data.role = 'host';
@@ -208,10 +212,10 @@ app.prepare().then(async () => {
       emitCurrentToHost(socket, room);
     });
 
-    socket.on('host:setQuiz', ({ quizId }) => {
+    socket.on('host:setQuiz', async ({ quizId }) => {
       const room = rooms.get(socket.data.pin);
       if (!room || room.phase !== 'lobby') return;
-      QZ.reload();
+      await QZ.refresh();
       room.quiz = getQuiz(quizId);
       io.to(room.pin).emit('room:quiz', { id: room.quiz.id, title: room.quiz.title });
       persist(room);

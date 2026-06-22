@@ -1,4 +1,5 @@
 'use client';
+import { useState, useEffect } from 'react';
 import { SHAPES } from '@/lib/game';
 
 export function Shape({ index, size = 40 }) {
@@ -45,6 +46,8 @@ export function DoubleBadge() {
 }
 
 export function Media({ image, video, max = 260 }) {
+  const [err, setErr] = useState(false);
+  useEffect(() => { setErr(false); }, [image]);
   if (video) {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 18 }}>
@@ -54,9 +57,19 @@ export function Media({ image, video, max = 260 }) {
     );
   }
   if (image) {
+    if (err) {
+      return (
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 18 }}>
+          <div className="mono" style={{ maxWidth: '100%', height: Math.min(max, 140), display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '0 24px', borderRadius: 18, background: '#F4F3EF', color: '#9A988E', fontSize: 12, textAlign: 'center', border: '1px dashed rgba(0,0,0,.15)' }}>
+            <span style={{ fontSize: 22 }}>🖼️</span>
+            Bilden kunde inte laddas — använd en direktlänk (.jpg/.png) eller ladda upp en bild.
+          </div>
+        </div>
+      );
+    }
     return (
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 18 }}>
-        <img src={image} alt="" style={{ maxHeight: max, maxWidth: '100%', borderRadius: 18, objectFit: 'cover' }} />
+        <img src={image} alt="" onError={() => setErr(true)} style={{ maxHeight: max, maxWidth: '100%', borderRadius: 18, objectFit: 'cover' }} />
       </div>
     );
   }
