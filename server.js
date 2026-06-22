@@ -268,10 +268,11 @@ app.prepare().then(async () => {
       const room = rooms.get(socket.data.pin);
       if (!room) return;
       clearRoomTimer(room); room.paused = false;
+      room.hostSocketId = socket.id; room.hostConnected = true;
       room.players = new Map(); room.answers = new Map(); room.qIndex = 0; room.phase = 'lobby';
       io.to(room.pin).emit('room:cleared');
       io.to(room.pin).emit('room:players', { players: [] });
-      if (room.hostSocketId) io.to(room.hostSocketId).emit('room:reset');
+      socket.emit('room:reset'); // straight to the host that requested it
       persist(room);
     });
     socket.on('host:next', () => {

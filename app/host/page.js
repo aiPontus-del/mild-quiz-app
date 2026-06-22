@@ -126,7 +126,7 @@ export default function HostPage() {
   const inGame = phase === 'question' || phase === 'preview' || phase === 'countdown';
 
   return (
-    <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 36, position: 'relative' }}>
+    <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 36, position: 'relative', background: 'radial-gradient(1000px 680px at 10% 4%, rgba(0,201,172,.20), transparent 58%), radial-gradient(900px 620px at 92% 96%, rgba(255,174,56,.16), transparent 58%), radial-gradient(760px 560px at 95% 6%, rgba(63,164,245,.14), transparent 60%), radial-gradient(700px 520px at 4% 92%, rgba(126,87,194,.12), transparent 60%), #ECEAE3' }}>
       <div style={{ position: 'fixed', top: 16, right: 16, zIndex: 20, display: 'flex', gap: 8 }}>
         {inGame && <ControlsMenu paused={paused} onPause={pause} onUnpause={unpause} onSkip={skip} onReveal={reveal} onEnd={endGame} />}
         <button onClick={toggleFs} aria-label="Helskärm" title="Helskärm" style={iconBtn}>{isFs ? '🡼' : '⛶'}</button>
