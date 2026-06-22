@@ -221,9 +221,13 @@ app.prepare().then(async () => {
       persist(room);
     });
 
-    socket.on('host:start', () => {
+    socket.on('host:start', async () => {
       const room = rooms.get(socket.data.pin);
       if (!room || room.players.size === 0) return;
+      // pull the latest saved version of the selected quiz so /admin edits take effect
+      await QZ.refresh();
+      const fresh = getQuiz(room.quiz && room.quiz.id);
+      if (fresh) { room.quiz = fresh; io.to(room.pin).emit('room:quiz', { id: fresh.id, title: fresh.title }); }
       for (const p of room.players.values()) { p.score = 0; p.streak = 0; }
       startCountdown(room, 0);
     });
